@@ -1,0 +1,3200 @@
+[
+  {
+    "id": 46,
+    "en": "(set) intersection",
+    "ja": "(集合の)積 (共通部分)",
+    "category": "General"
+  },
+  {
+    "id": 101,
+    "en": "(set) union",
+    "ja": "(集合の)和 (合併)",
+    "category": "General"
+  },
+  {
+    "id": 4,
+    "en": "(square) brackets",
+    "ja": "角かっこ",
+    "category": "General"
+  },
+  {
+    "id": 116,
+    "en": "absolute error",
+    "ja": "絶対誤差",
+    "category": "General"
+  },
+  {
+    "id": 431,
+    "en": "absolute error",
+    "ja": "絶対誤差",
+    "category": "General"
+  },
+  {
+    "id": 130,
+    "en": "absolute value, magnitude",
+    "ja": "絶対値",
+    "category": "General"
+  },
+  {
+    "id": 150,
+    "en": "abstract data type",
+    "ja": "抽象データ型",
+    "category": "General"
+  },
+  {
+    "id": 157,
+    "en": "access",
+    "ja": "参照",
+    "category": "General"
+  },
+  {
+    "id": 158,
+    "en": "accessible",
+    "ja": "参照可能な",
+    "category": "General"
+  },
+  {
+    "id": 432,
+    "en": "accumulator",
+    "ja": "アキュムレータ, 累算器",
+    "category": "General"
+  },
+  {
+    "id": 406,
+    "en": "achieve",
+    "ja": "達成する",
+    "category": "General"
+  },
+  {
+    "id": 405,
+    "en": "achievement",
+    "ja": "達成",
+    "category": "General"
+  },
+  {
+    "id": 385,
+    "en": "act",
+    "ja": "行動する",
+    "category": "General"
+  },
+  {
+    "id": 384,
+    "en": "action",
+    "ja": "行動",
+    "category": "General"
+  },
+  {
+    "id": 54,
+    "en": "add",
+    "ja": "足す",
+    "category": "General"
+  },
+  {
+    "id": 53,
+    "en": "addition",
+    "ja": "足し算",
+    "category": "General"
+  },
+  {
+    "id": 433,
+    "en": "allot",
+    "ja": "割り当てる",
+    "category": "General"
+  },
+  {
+    "id": 91,
+    "en": "angle brackets",
+    "ja": "山かっこ",
+    "category": "General"
+  },
+  {
+    "id": 108,
+    "en": "approximate",
+    "ja": "近似する",
+    "category": "General"
+  },
+  {
+    "id": 107,
+    "en": "approximation",
+    "ja": "近似",
+    "category": "General"
+  },
+  {
+    "id": 434,
+    "en": "approximation",
+    "ja": "近似",
+    "category": "General"
+  },
+  {
+    "id": 66,
+    "en": "argument",
+    "ja": "引数",
+    "category": "General"
+  },
+  {
+    "id": 120,
+    "en": "arithmetic operation",
+    "ja": "四則演算",
+    "category": "General"
+  },
+  {
+    "id": 435,
+    "en": "arithmetic operation",
+    "ja": "四則演算",
+    "category": "General"
+  },
+  {
+    "id": 28,
+    "en": "arithmetic operations",
+    "ja": "四則演算",
+    "category": "General"
+  },
+  {
+    "id": 179,
+    "en": "array",
+    "ja": "配列",
+    "category": "General"
+  },
+  {
+    "id": 436,
+    "en": "as",
+    "ja": "～につれて",
+    "category": "General"
+  },
+  {
+    "id": 323,
+    "en": "assert",
+    "ja": "主張する",
+    "category": "General"
+  },
+  {
+    "id": 322,
+    "en": "assertion",
+    "ja": "主張",
+    "category": "General"
+  },
+  {
+    "id": 174,
+    "en": "assign",
+    "ja": "代入する",
+    "category": "General"
+  },
+  {
+    "id": 173,
+    "en": "assignment",
+    "ja": "代入",
+    "category": "General"
+  },
+  {
+    "id": 244,
+    "en": "associative law",
+    "ja": "結合法則",
+    "category": "General"
+  },
+  {
+    "id": 403,
+    "en": "attribute",
+    "ja": "属性",
+    "category": "General"
+  },
+  {
+    "id": 404,
+    "en": "attribute ~ to ...",
+    "ja": "〜（原因など）を...のせいにする",
+    "category": "General"
+  },
+  {
+    "id": 154,
+    "en": "authorization",
+    "ja": "権限",
+    "category": "General"
+  },
+  {
+    "id": 155,
+    "en": "authorized",
+    "ja": "権限のある",
+    "category": "General"
+  },
+  {
+    "id": 204,
+    "en": "autocorrelation",
+    "ja": "自己相関",
+    "category": "General"
+  },
+  {
+    "id": 318,
+    "en": "axiom",
+    "ja": "公理",
+    "category": "General"
+  },
+  {
+    "id": 319,
+    "en": "axiomatization",
+    "ja": "公理化",
+    "category": "General"
+  },
+  {
+    "id": 320,
+    "en": "axiomatize",
+    "ja": "公理化する",
+    "category": "General"
+  },
+  {
+    "id": 437,
+    "en": "base",
+    "ja": "基底 / (対数の)基底",
+    "category": "General"
+  },
+  {
+    "id": 233,
+    "en": "basis",
+    "ja": "基底",
+    "category": "General"
+  },
+  {
+    "id": 123,
+    "en": "binary",
+    "ja": "2進の",
+    "category": "General"
+  },
+  {
+    "id": 438,
+    "en": "binary decomposition",
+    "ja": "2進分解(法)",
+    "category": "General"
+  },
+  {
+    "id": 63,
+    "en": "binary number",
+    "ja": "2進数",
+    "category": "General"
+  },
+  {
+    "id": 141,
+    "en": "binary operator",
+    "ja": "2項演算子",
+    "category": "General"
+  },
+  {
+    "id": 124,
+    "en": "binary representation",
+    "ja": "2進小数表現",
+    "category": "General"
+  },
+  {
+    "id": 439,
+    "en": "binary representation",
+    "ja": "2進法 / 2進表現",
+    "category": "General"
+  },
+  {
+    "id": 95,
+    "en": "both sides",
+    "ja": "両辺",
+    "category": "General"
+  },
+  {
+    "id": 61,
+    "en": "braces",
+    "ja": "波かっこ",
+    "category": "General"
+  },
+  {
+    "id": 440,
+    "en": "bug",
+    "ja": "バグ (プログラム中の誤り)",
+    "category": "General"
+  },
+  {
+    "id": 441,
+    "en": "built-in function",
+    "ja": "組込み関数",
+    "category": "General"
+  },
+  {
+    "id": 110,
+    "en": "calculate, compute",
+    "ja": "計算する",
+    "category": "General"
+  },
+  {
+    "id": 109,
+    "en": "calculation, computation",
+    "ja": "計算",
+    "category": "General"
+  },
+  {
+    "id": 114,
+    "en": "cancelation",
+    "ja": "桁落ち",
+    "category": "General"
+  },
+  {
+    "id": 442,
+    "en": "cancellation(of significant digits)",
+    "ja": "(有効数字の)桁落ち",
+    "category": "General"
+  },
+  {
+    "id": 389,
+    "en": "capture",
+    "ja": "撮影する（画像を）",
+    "category": "General"
+  },
+  {
+    "id": 10,
+    "en": "cardinal number",
+    "ja": "基数",
+    "category": "General"
+  },
+  {
+    "id": 443,
+    "en": "carry",
+    "ja": "桁の繰り上がり",
+    "category": "General"
+  },
+  {
+    "id": 351,
+    "en": "Cartesian product",
+    "ja": "デカルト積、直積",
+    "category": "General"
+  },
+  {
+    "id": 444,
+    "en": "ceiling function",
+    "ja": "天井関数",
+    "category": "General"
+  },
+  {
+    "id": 249,
+    "en": "characteristic equation",
+    "ja": "固有方程式",
+    "category": "General"
+  },
+  {
+    "id": 357,
+    "en": "characteristic function",
+    "ja": "特性関数",
+    "category": "General"
+  },
+  {
+    "id": 152,
+    "en": "class",
+    "ja": "クラス",
+    "category": "General"
+  },
+  {
+    "id": 420,
+    "en": "classification",
+    "ja": "分類",
+    "category": "General"
+  },
+  {
+    "id": 421,
+    "en": "classify",
+    "ja": "分類する",
+    "category": "General"
+  },
+  {
+    "id": 151,
+    "en": "client",
+    "ja": "クライアント",
+    "category": "General"
+  },
+  {
+    "id": 184,
+    "en": "code",
+    "ja": "コード",
+    "category": "General"
+  },
+  {
+    "id": 445,
+    "en": "coefficient",
+    "ja": "係数",
+    "category": "General"
+  },
+  {
+    "id": 294,
+    "en": "cofactor",
+    "ja": "余因子",
+    "category": "General"
+  },
+  {
+    "id": 295,
+    "en": "cofactor matrix",
+    "ja": "余因子行列",
+    "category": "General"
+  },
+  {
+    "id": 239,
+    "en": "column",
+    "ja": "列",
+    "category": "General"
+  },
+  {
+    "id": 446,
+    "en": "comment",
+    "ja": "(プログラム中の)注釈文",
+    "category": "General"
+  },
+  {
+    "id": 246,
+    "en": "commutative law",
+    "ja": "交換法則",
+    "category": "General"
+  },
+  {
+    "id": 447,
+    "en": "compiler",
+    "ja": "コンパイラ (変換プログラム)",
+    "category": "General"
+  },
+  {
+    "id": 132,
+    "en": "complement form",
+    "ja": "補数形式",
+    "category": "General"
+  },
+  {
+    "id": 302,
+    "en": "complete",
+    "ja": "完全な",
+    "category": "General"
+  },
+  {
+    "id": 303,
+    "en": "completeness",
+    "ja": "完全性",
+    "category": "General"
+  },
+  {
+    "id": 74,
+    "en": "complex number",
+    "ja": "複素数",
+    "category": "General"
+  },
+  {
+    "id": 264,
+    "en": "component",
+    "ja": "成分",
+    "category": "General"
+  },
+  {
+    "id": 265,
+    "en": "componentwise",
+    "ja": "成分ごとに",
+    "category": "General"
+  },
+  {
+    "id": 304,
+    "en": "conclusion",
+    "ja": "帰結、結論",
+    "category": "General"
+  },
+  {
+    "id": 324,
+    "en": "condition",
+    "ja": "条件",
+    "category": "General"
+  },
+  {
+    "id": 307,
+    "en": "connective",
+    "ja": "結合子",
+    "category": "General"
+  },
+  {
+    "id": 178,
+    "en": "content",
+    "ja": "内容",
+    "category": "General"
+  },
+  {
+    "id": 228,
+    "en": "continuous",
+    "ja": "連続的な",
+    "category": "General"
+  },
+  {
+    "id": 363,
+    "en": "contradiction",
+    "ja": "矛盾",
+    "category": "General"
+  },
+  {
+    "id": 346,
+    "en": "contraposition",
+    "ja": "対偶",
+    "category": "General"
+  },
+  {
+    "id": 347,
+    "en": "contrapositive",
+    "ja": "対偶の（命題）",
+    "category": "General"
+  },
+  {
+    "id": 165,
+    "en": "control",
+    "ja": "制御",
+    "category": "General"
+  },
+  {
+    "id": 448,
+    "en": "convergent",
+    "ja": "収束する",
+    "category": "General"
+  },
+  {
+    "id": 306,
+    "en": "converse",
+    "ja": "逆",
+    "category": "General"
+  },
+  {
+    "id": 205,
+    "en": "correlated",
+    "ja": "相関のある",
+    "category": "General"
+  },
+  {
+    "id": 203,
+    "en": "correlation",
+    "ja": "相関",
+    "category": "General"
+  },
+  {
+    "id": 345,
+    "en": "correspond",
+    "ja": "対応する",
+    "category": "General"
+  },
+  {
+    "id": 344,
+    "en": "correspondence",
+    "ja": "対応",
+    "category": "General"
+  },
+  {
+    "id": 218,
+    "en": "covariance",
+    "ja": "共分散",
+    "category": "General"
+  },
+  {
+    "id": 449,
+    "en": "CPU",
+    "ja": "中央処理装置 (central processing unit)",
+    "category": "General"
+  },
+  {
+    "id": 23,
+    "en": "cube",
+    "ja": "三乗（する）",
+    "category": "General"
+  },
+  {
+    "id": 94,
+    "en": "cube root",
+    "ja": "立方根",
+    "category": "General"
+  },
+  {
+    "id": 221,
+    "en": "cumulative distribution",
+    "ja": "累積分布",
+    "category": "General"
+  },
+  {
+    "id": 390,
+    "en": "curse of dimensionality",
+    "ja": "次元の呪い",
+    "category": "General"
+  },
+  {
+    "id": 176,
+    "en": "data",
+    "ja": "データ",
+    "category": "General"
+  },
+  {
+    "id": 177,
+    "en": "data hiding",
+    "ja": "データ隠蔽",
+    "category": "General"
+  },
+  {
+    "id": 379,
+    "en": "decide",
+    "ja": "決定する",
+    "category": "General"
+  },
+  {
+    "id": 121,
+    "en": "decimal",
+    "ja": "10進の",
+    "category": "General"
+  },
+  {
+    "id": 34,
+    "en": "decimal number",
+    "ja": "10進数",
+    "category": "General"
+  },
+  {
+    "id": 126,
+    "en": "decimal place",
+    "ja": "小数点以下の桁",
+    "category": "General"
+  },
+  {
+    "id": 39,
+    "en": "decimal point",
+    "ja": "小数点",
+    "category": "General"
+  },
+  {
+    "id": 450,
+    "en": "decimal point",
+    "ja": "小数点",
+    "category": "General"
+  },
+  {
+    "id": 122,
+    "en": "decimal representation",
+    "ja": "10進小数表現",
+    "category": "General"
+  },
+  {
+    "id": 451,
+    "en": "decimal representation",
+    "ja": "10進法",
+    "category": "General"
+  },
+  {
+    "id": 378,
+    "en": "decision",
+    "ja": "決定",
+    "category": "General"
+  },
+  {
+    "id": 166,
+    "en": "declaration",
+    "ja": "宣言",
+    "category": "General"
+  },
+  {
+    "id": 167,
+    "en": "declare",
+    "ja": "宣言する",
+    "category": "General"
+  },
+  {
+    "id": 287,
+    "en": "decomposition",
+    "ja": "分解",
+    "category": "General"
+  },
+  {
+    "id": 392,
+    "en": "degree of freedom",
+    "ja": "自由度",
+    "category": "General"
+  },
+  {
+    "id": 164,
+    "en": "delete",
+    "ja": "消去する",
+    "category": "General"
+  },
+  {
+    "id": 163,
+    "en": "deletion",
+    "ja": "消去",
+    "category": "General"
+  },
+  {
+    "id": 80,
+    "en": "denominator",
+    "ja": "分母",
+    "category": "General"
+  },
+  {
+    "id": 226,
+    "en": "density function",
+    "ja": "密度関数",
+    "category": "General"
+  },
+  {
+    "id": 353,
+    "en": "derivation",
+    "ja": "導出",
+    "category": "General"
+  },
+  {
+    "id": 56,
+    "en": "derivative",
+    "ja": "導関数",
+    "category": "General"
+  },
+  {
+    "id": 452,
+    "en": "derivative",
+    "ja": "導関数",
+    "category": "General"
+  },
+  {
+    "id": 354,
+    "en": "derive",
+    "ja": "導出する",
+    "category": "General"
+  },
+  {
+    "id": 352,
+    "en": "Descartes",
+    "ja": "デカルト（人名）",
+    "category": "General"
+  },
+  {
+    "id": 376,
+    "en": "describe",
+    "ja": "記述する",
+    "category": "General"
+  },
+  {
+    "id": 375,
+    "en": "description",
+    "ja": "記述",
+    "category": "General"
+  },
+  {
+    "id": 377,
+    "en": "descriptor",
+    "ja": "記述子",
+    "category": "General"
+  },
+  {
+    "id": 381,
+    "en": "detect",
+    "ja": "検出する",
+    "category": "General"
+  },
+  {
+    "id": 380,
+    "en": "detection",
+    "ja": "検出",
+    "category": "General"
+  },
+  {
+    "id": 241,
+    "en": "determinant",
+    "ja": "行列式",
+    "category": "General"
+  },
+  {
+    "id": 275,
+    "en": "diagonal element",
+    "ja": "対角要素",
+    "category": "General"
+  },
+  {
+    "id": 274,
+    "en": "diagonal matrix",
+    "ja": "対角行列",
+    "category": "General"
+  },
+  {
+    "id": 21,
+    "en": "difference",
+    "ja": "差",
+    "category": "General"
+  },
+  {
+    "id": 70,
+    "en": "differentiate",
+    "ja": "微分する",
+    "category": "General"
+  },
+  {
+    "id": 71,
+    "en": "differentiation",
+    "ja": "微分すること、微分",
+    "category": "General"
+  },
+  {
+    "id": 111,
+    "en": "digit",
+    "ja": "桁",
+    "category": "General"
+  },
+  {
+    "id": 453,
+    "en": "digit",
+    "ja": "0, 1, ..., 9の数",
+    "category": "General"
+  },
+  {
+    "id": 250,
+    "en": "dimension",
+    "ja": "次元",
+    "category": "General"
+  },
+  {
+    "id": 455,
+    "en": "discard",
+    "ja": "破棄する",
+    "category": "General"
+  },
+  {
+    "id": 454,
+    "en": "discern",
+    "ja": "見分ける",
+    "category": "General"
+  },
+  {
+    "id": 227,
+    "en": "discrete",
+    "ja": "離散的な",
+    "category": "General"
+  },
+  {
+    "id": 456,
+    "en": "discriminant",
+    "ja": "判別式",
+    "category": "General"
+  },
+  {
+    "id": 225,
+    "en": "disjoint",
+    "ja": "交わりのない",
+    "category": "General"
+  },
+  {
+    "id": 181,
+    "en": "display",
+    "ja": "表示、表示する",
+    "category": "General"
+  },
+  {
+    "id": 219,
+    "en": "distribution",
+    "ja": "分布",
+    "category": "General"
+  },
+  {
+    "id": 245,
+    "en": "distributive law",
+    "ja": "分配法則",
+    "category": "General"
+  },
+  {
+    "id": 103,
+    "en": "divide",
+    "ja": "割る",
+    "category": "General"
+  },
+  {
+    "id": 129,
+    "en": "dividend",
+    "ja": "被除数",
+    "category": "General"
+  },
+  {
+    "id": 102,
+    "en": "division",
+    "ja": "割り算、除算",
+    "category": "General"
+  },
+  {
+    "id": 128,
+    "en": "divisor",
+    "ja": "除数",
+    "category": "General"
+  },
+  {
+    "id": 196,
+    "en": "domain",
+    "ja": "領域",
+    "category": "General"
+  },
+  {
+    "id": 457,
+    "en": "double precision",
+    "ja": "倍精度",
+    "category": "General"
+  },
+  {
+    "id": 382,
+    "en": "effect",
+    "ja": "効果",
+    "category": "General"
+  },
+  {
+    "id": 383,
+    "en": "effective",
+    "ja": "効果的な、実質的な",
+    "category": "General"
+  },
+  {
+    "id": 247,
+    "en": "eigenvalue",
+    "ja": "固有値",
+    "category": "General"
+  },
+  {
+    "id": 248,
+    "en": "eigenvector",
+    "ja": "固有ベクトル",
+    "category": "General"
+  },
+  {
+    "id": 17,
+    "en": "element, member",
+    "ja": "元、要素",
+    "category": "General"
+  },
+  {
+    "id": 125,
+    "en": "eliminate",
+    "ja": "消去、消去する",
+    "category": "General"
+  },
+  {
+    "id": 16,
+    "en": "empty set",
+    "ja": "空集合",
+    "category": "General"
+  },
+  {
+    "id": 148,
+    "en": "encapsulate",
+    "ja": "カプセル化する",
+    "category": "General"
+  },
+  {
+    "id": 147,
+    "en": "encapsulation",
+    "ja": "カプセル化",
+    "category": "General"
+  },
+  {
+    "id": 374,
+    "en": "environment",
+    "ja": "環境",
+    "category": "General"
+  },
+  {
+    "id": 69,
+    "en": "equal, be equal to",
+    "ja": "等しい",
+    "category": "General"
+  },
+  {
+    "id": 58,
+    "en": "equality",
+    "ja": "等式、等号",
+    "category": "General"
+  },
+  {
+    "id": 57,
+    "en": "equality sign",
+    "ja": "等号",
+    "category": "General"
+  },
+  {
+    "id": 355,
+    "en": "equivalence",
+    "ja": "同値",
+    "category": "General"
+  },
+  {
+    "id": 59,
+    "en": "equivalence relation",
+    "ja": "同値関係",
+    "category": "General"
+  },
+  {
+    "id": 356,
+    "en": "equivalent",
+    "ja": "同値な",
+    "category": "General"
+  },
+  {
+    "id": 115,
+    "en": "error",
+    "ja": "誤差",
+    "category": "General"
+  },
+  {
+    "id": 458,
+    "en": "error",
+    "ja": "誤差",
+    "category": "General"
+  },
+  {
+    "id": 399,
+    "en": "estimate",
+    "ja": "推定する",
+    "category": "General"
+  },
+  {
+    "id": 398,
+    "en": "estimation",
+    "ja": "推定",
+    "category": "General"
+  },
+  {
+    "id": 400,
+    "en": "estimator",
+    "ja": "推定値、推定量",
+    "category": "General"
+  },
+  {
+    "id": 292,
+    "en": "Euclid",
+    "ja": "ユークリッド（人名）",
+    "category": "General"
+  },
+  {
+    "id": 293,
+    "en": "Euclidean",
+    "ja": "ユークリッドの",
+    "category": "General"
+  },
+  {
+    "id": 202,
+    "en": "event",
+    "ja": "事象",
+    "category": "General"
+  },
+  {
+    "id": 214,
+    "en": "exclusion",
+    "ja": "排他",
+    "category": "General"
+  },
+  {
+    "id": 215,
+    "en": "exclusive",
+    "ja": "排他的な",
+    "category": "General"
+  },
+  {
+    "id": 459,
+    "en": "execution",
+    "ja": "実行",
+    "category": "General"
+  },
+  {
+    "id": 343,
+    "en": "exist",
+    "ja": "存在する",
+    "category": "General"
+  },
+  {
+    "id": 342,
+    "en": "existence",
+    "ja": "存在",
+    "category": "General"
+  },
+  {
+    "id": 51,
+    "en": "existential quantifier",
+    "ja": "存在記号",
+    "category": "General"
+  },
+  {
+    "id": 209,
+    "en": "expand",
+    "ja": "展開する",
+    "category": "General"
+  },
+  {
+    "id": 208,
+    "en": "expansion",
+    "ja": "展開",
+    "category": "General"
+  },
+  {
+    "id": 199,
+    "en": "expectation, expected value",
+    "ja": "期待値",
+    "category": "General"
+  },
+  {
+    "id": 430,
+    "en": "exploit",
+    "ja": "利用する",
+    "category": "General"
+  },
+  {
+    "id": 429,
+    "en": "exploitation",
+    "ja": "利用（知識、資源、権力などの）",
+    "category": "General"
+  },
+  {
+    "id": 25,
+    "en": "exponent",
+    "ja": "指数、指数部",
+    "category": "General"
+  },
+  {
+    "id": 460,
+    "en": "exponent",
+    "ja": "指数部",
+    "category": "General"
+  },
+  {
+    "id": 26,
+    "en": "exponential function",
+    "ja": "指数関数",
+    "category": "General"
+  },
+  {
+    "id": 461,
+    "en": "exponential function",
+    "ja": "指数関数",
+    "category": "General"
+  },
+  {
+    "id": 361,
+    "en": "express",
+    "ja": "表現する",
+    "category": "General"
+  },
+  {
+    "id": 160,
+    "en": "expression",
+    "ja": "式、表現",
+    "category": "General"
+  },
+  {
+    "id": 145,
+    "en": "extend",
+    "ja": "拡張する",
+    "category": "General"
+  },
+  {
+    "id": 144,
+    "en": "extension",
+    "ja": "拡張",
+    "category": "General"
+  },
+  {
+    "id": 408,
+    "en": "extract",
+    "ja": "抽出する",
+    "category": "General"
+  },
+  {
+    "id": 407,
+    "en": "extraction",
+    "ja": "抽出",
+    "category": "General"
+  },
+  {
+    "id": 462,
+    "en": "factorial",
+    "ja": "階乗",
+    "category": "General"
+  },
+  {
+    "id": 409,
+    "en": "feature",
+    "ja": "特徴",
+    "category": "General"
+  },
+  {
+    "id": 463,
+    "en": "Fibonacci decomposition",
+    "ja": "フィボナッチ分解(法)",
+    "category": "General"
+  },
+  {
+    "id": 273,
+    "en": "field",
+    "ja": "体",
+    "category": "General"
+  },
+  {
+    "id": 92,
+    "en": "finite",
+    "ja": "有限の",
+    "category": "General"
+  },
+  {
+    "id": 118,
+    "en": "fixed point",
+    "ja": "固定小数点",
+    "category": "General"
+  },
+  {
+    "id": 464,
+    "en": "fixed point representation",
+    "ja": "固定小数点表示",
+    "category": "General"
+  },
+  {
+    "id": 119,
+    "en": "floating point",
+    "ja": "浮動小数点",
+    "category": "General"
+  },
+  {
+    "id": 465,
+    "en": "floating point representation",
+    "ja": "浮動小数点表示",
+    "category": "General"
+  },
+  {
+    "id": 182,
+    "en": "floating type (floating-point type)",
+    "ja": "浮動小数点型",
+    "category": "General"
+  },
+  {
+    "id": 466,
+    "en": "floor function",
+    "ja": "床関数",
+    "category": "General"
+  },
+  {
+    "id": 467,
+    "en": "followed by",
+    "ja": "その後に～",
+    "category": "General"
+  },
+  {
+    "id": 337,
+    "en": "formal",
+    "ja": "正式な（規則に従った）",
+    "category": "General"
+  },
+  {
+    "id": 339,
+    "en": "formalization",
+    "ja": "形式化",
+    "category": "General"
+  },
+  {
+    "id": 338,
+    "en": "formalize",
+    "ja": "形式化する",
+    "category": "General"
+  },
+  {
+    "id": 38,
+    "en": "fraction",
+    "ja": "小数、分数",
+    "category": "General"
+  },
+  {
+    "id": 9,
+    "en": "function",
+    "ja": "関数",
+    "category": "General"
+  },
+  {
+    "id": 468,
+    "en": "gain in",
+    "ja": "～の増加",
+    "category": "General"
+  },
+  {
+    "id": 171,
+    "en": "global",
+    "ja": "大域的、大域的な",
+    "category": "General"
+  },
+  {
+    "id": 362,
+    "en": "grammar",
+    "ja": "文法",
+    "category": "General"
+  },
+  {
+    "id": 469,
+    "en": "hexadecimal representation",
+    "ja": "16進法",
+    "category": "General"
+  },
+  {
+    "id": 62,
+    "en": "hold",
+    "ja": "成り立つ",
+    "category": "General"
+  },
+  {
+    "id": 277,
+    "en": "identity",
+    "ja": "単位元",
+    "category": "General"
+  },
+  {
+    "id": 470,
+    "en": "identity",
+    "ja": "恒等式",
+    "category": "General"
+  },
+  {
+    "id": 278,
+    "en": "identity matrix, unit matrix",
+    "ja": "単位行列",
+    "category": "General"
+  },
+  {
+    "id": 252,
+    "en": "image",
+    "ja": "像",
+    "category": "General"
+  },
+  {
+    "id": 372,
+    "en": "image processing",
+    "ja": "画像処理",
+    "category": "General"
+  },
+  {
+    "id": 15,
+    "en": "imaginary number",
+    "ja": "虚数",
+    "category": "General"
+  },
+  {
+    "id": 162,
+    "en": "implement",
+    "ja": "実装する",
+    "category": "General"
+  },
+  {
+    "id": 471,
+    "en": "implement",
+    "ja": "実装する",
+    "category": "General"
+  },
+  {
+    "id": 161,
+    "en": "implementation",
+    "ja": "実装",
+    "category": "General"
+  },
+  {
+    "id": 8,
+    "en": "implication",
+    "ja": "含意",
+    "category": "General"
+  },
+  {
+    "id": 60,
+    "en": "imply~",
+    "ja": "...ならば〜である",
+    "category": "General"
+  },
+  {
+    "id": 159,
+    "en": "inaccessible",
+    "ja": "参照不可能な",
+    "category": "General"
+  },
+  {
+    "id": 86,
+    "en": "inclusion relation",
+    "ja": "包含関係",
+    "category": "General"
+  },
+  {
+    "id": 170,
+    "en": "increment",
+    "ja": "増分",
+    "category": "General"
+  },
+  {
+    "id": 212,
+    "en": "independence",
+    "ja": "独立",
+    "category": "General"
+  },
+  {
+    "id": 213,
+    "en": "independent",
+    "ja": "独立な",
+    "category": "General"
+  },
+  {
+    "id": 76,
+    "en": "inequality",
+    "ja": "不等式、不等号",
+    "category": "General"
+  },
+  {
+    "id": 75,
+    "en": "inequality sign",
+    "ja": "不等号",
+    "category": "General"
+  },
+  {
+    "id": 331,
+    "en": "infer",
+    "ja": "推論する",
+    "category": "General"
+  },
+  {
+    "id": 330,
+    "en": "inference",
+    "ja": "推論",
+    "category": "General"
+  },
+  {
+    "id": 89,
+    "en": "infinite",
+    "ja": "無限の",
+    "category": "General"
+  },
+  {
+    "id": 88,
+    "en": "infinity",
+    "ja": "無限大",
+    "category": "General"
+  },
+  {
+    "id": 153,
+    "en": "inheritance",
+    "ja": "継承",
+    "category": "General"
+  },
+  {
+    "id": 472,
+    "en": "initial condition",
+    "ja": "初期条件",
+    "category": "General"
+  },
+  {
+    "id": 284,
+    "en": "inner product",
+    "ja": "内積",
+    "category": "General"
+  },
+  {
+    "id": 44,
+    "en": "integer",
+    "ja": "整数",
+    "category": "General"
+  },
+  {
+    "id": 47,
+    "en": "integral",
+    "ja": "積分",
+    "category": "General"
+  },
+  {
+    "id": 48,
+    "en": "integrate",
+    "ja": "積分する",
+    "category": "General"
+  },
+  {
+    "id": 49,
+    "en": "integration",
+    "ja": "積分すること",
+    "category": "General"
+  },
+  {
+    "id": 402,
+    "en": "interact",
+    "ja": "相互作用する",
+    "category": "General"
+  },
+  {
+    "id": 401,
+    "en": "interaction",
+    "ja": "相互作用",
+    "category": "General"
+  },
+  {
+    "id": 473,
+    "en": "intermediate",
+    "ja": "途中経過の",
+    "category": "General"
+  },
+  {
+    "id": 423,
+    "en": "interpolate",
+    "ja": "補間、補間する",
+    "category": "General"
+  },
+  {
+    "id": 300,
+    "en": "interpret",
+    "ja": "解釈する",
+    "category": "General"
+  },
+  {
+    "id": 299,
+    "en": "interpretation",
+    "ja": "解釈",
+    "category": "General"
+  },
+  {
+    "id": 224,
+    "en": "intersection",
+    "ja": "交わり",
+    "category": "General"
+  },
+  {
+    "id": 234,
+    "en": "inverse",
+    "ja": "逆元、逆行列",
+    "category": "General"
+  },
+  {
+    "id": 474,
+    "en": "irrational number",
+    "ja": "無理数",
+    "category": "General"
+  },
+  {
+    "id": 475,
+    "en": "iteration",
+    "ja": "反復",
+    "category": "General"
+  },
+  {
+    "id": 220,
+    "en": "joint distribution",
+    "ja": "結合分布",
+    "category": "General"
+  },
+  {
+    "id": 368,
+    "en": "learn",
+    "ja": "学習する",
+    "category": "General"
+  },
+  {
+    "id": 367,
+    "en": "learning",
+    "ja": "学習",
+    "category": "General"
+  },
+  {
+    "id": 476,
+    "en": "least significant digit",
+    "ja": "最小 (最下位) 有効数字",
+    "category": "General"
+  },
+  {
+    "id": 22,
+    "en": "left(-hand) side",
+    "ja": "左辺",
+    "category": "General"
+  },
+  {
+    "id": 14,
+    "en": "limit",
+    "ja": "極限",
+    "category": "General"
+  },
+  {
+    "id": 269,
+    "en": "linear combination",
+    "ja": "線形結合",
+    "category": "General"
+  },
+  {
+    "id": 230,
+    "en": "linear form",
+    "ja": "1次形式",
+    "category": "General"
+  },
+  {
+    "id": 253,
+    "en": "linear mapping",
+    "ja": "線形写像",
+    "category": "General"
+  },
+  {
+    "id": 268,
+    "en": "linear space",
+    "ja": "線形空間",
+    "category": "General"
+  },
+  {
+    "id": 272,
+    "en": "linear transformation",
+    "ja": "線形変換",
+    "category": "General"
+  },
+  {
+    "id": 271,
+    "en": "linearly dependent",
+    "ja": "線形従属の",
+    "category": "General"
+  },
+  {
+    "id": 270,
+    "en": "linearly independent",
+    "ja": "線形独立の",
+    "category": "General"
+  },
+  {
+    "id": 172,
+    "en": "local",
+    "ja": "局所的、局所的な",
+    "category": "General"
+  },
+  {
+    "id": 477,
+    "en": "logarithm",
+    "ja": "対数",
+    "category": "General"
+  },
+  {
+    "id": 98,
+    "en": "logical product",
+    "ja": "論理積",
+    "category": "General"
+  },
+  {
+    "id": 99,
+    "en": "logical sum",
+    "ja": "論理和",
+    "category": "General"
+  },
+  {
+    "id": 127,
+    "en": "mantissa",
+    "ja": "小数部",
+    "category": "General"
+  },
+  {
+    "id": 478,
+    "en": "mantissa",
+    "ja": "小数部, 仮数部",
+    "category": "General"
+  },
+  {
+    "id": 251,
+    "en": "mapping",
+    "ja": "写像",
+    "category": "General"
+  },
+  {
+    "id": 222,
+    "en": "marginal distribution",
+    "ja": "周辺分布",
+    "category": "General"
+  },
+  {
+    "id": 479,
+    "en": "mathematical induction",
+    "ja": "数学的帰納法",
+    "category": "General"
+  },
+  {
+    "id": 237,
+    "en": "matrix",
+    "ja": "行列",
+    "category": "General"
+  },
+  {
+    "id": 480,
+    "en": "maximum",
+    "ja": "最大の, 最大値",
+    "category": "General"
+  },
+  {
+    "id": 223,
+    "en": "mean, average",
+    "ja": "平均",
+    "category": "General"
+  },
+  {
+    "id": 207,
+    "en": "measure",
+    "ja": "測度",
+    "category": "General"
+  },
+  {
+    "id": 190,
+    "en": "member",
+    "ja": "メンバー",
+    "category": "General"
+  },
+  {
+    "id": 11,
+    "en": "membership relation",
+    "ja": "帰属関係",
+    "category": "General"
+  },
+  {
+    "id": 189,
+    "en": "method",
+    "ja": "メソッド",
+    "category": "General"
+  },
+  {
+    "id": 243,
+    "en": "metric",
+    "ja": "計量",
+    "category": "General"
+  },
+  {
+    "id": 242,
+    "en": "minor",
+    "ja": "小行列式",
+    "category": "General"
+  },
+  {
+    "id": 87,
+    "en": "minus",
+    "ja": "マイナス",
+    "category": "General"
+  },
+  {
+    "id": 192,
+    "en": "model",
+    "ja": "モデル、モデル化する",
+    "category": "General"
+  },
+  {
+    "id": 175,
+    "en": "module",
+    "ja": "単位、モジュール",
+    "category": "General"
+  },
+  {
+    "id": 481,
+    "en": "most significant digit",
+    "ja": "最大 (最上位) 有効数字",
+    "category": "General"
+  },
+  {
+    "id": 5,
+    "en": "multiplication",
+    "ja": "掛け算",
+    "category": "General"
+  },
+  {
+    "id": 6,
+    "en": "multiply",
+    "ja": "掛ける",
+    "category": "General"
+  },
+  {
+    "id": 27,
+    "en": "natural number",
+    "ja": "自然数",
+    "category": "General"
+  },
+  {
+    "id": 325,
+    "en": "necessary condition",
+    "ja": "必要条件",
+    "category": "General"
+  },
+  {
+    "id": 482,
+    "en": "needless to say",
+    "ja": "言うまでもなく",
+    "category": "General"
+  },
+  {
+    "id": 68,
+    "en": "negation",
+    "ja": "否定",
+    "category": "General"
+  },
+  {
+    "id": 72,
+    "en": "negative",
+    "ja": "負",
+    "category": "General"
+  },
+  {
+    "id": 411,
+    "en": "neural network",
+    "ja": "ニューラルネットワーク",
+    "category": "General"
+  },
+  {
+    "id": 73,
+    "en": "non-negative",
+    "ja": "負でない（非負）",
+    "category": "General"
+  },
+  {
+    "id": 97,
+    "en": "non-zero",
+    "ja": "零でない",
+    "category": "General"
+  },
+  {
+    "id": 260,
+    "en": "nonsingular",
+    "ja": "正則な、非特異な",
+    "category": "General"
+  },
+  {
+    "id": 285,
+    "en": "norm",
+    "ja": "ノルム",
+    "category": "General"
+  },
+  {
+    "id": 258,
+    "en": "normalization",
+    "ja": "正規化",
+    "category": "General"
+  },
+  {
+    "id": 483,
+    "en": "normalization",
+    "ja": "正規化",
+    "category": "General"
+  },
+  {
+    "id": 259,
+    "en": "normalize",
+    "ja": "正規化する",
+    "category": "General"
+  },
+  {
+    "id": 79,
+    "en": "numerator",
+    "ja": "分子",
+    "category": "General"
+  },
+  {
+    "id": 142,
+    "en": "object",
+    "ja": "オブジェクト、物体",
+    "category": "General"
+  },
+  {
+    "id": 143,
+    "en": "object-oriented",
+    "ja": "オブジェクト指向の",
+    "category": "General"
+  },
+  {
+    "id": 334,
+    "en": "occur",
+    "ja": "生起する",
+    "category": "General"
+  },
+  {
+    "id": 333,
+    "en": "occurrence",
+    "ja": "生起",
+    "category": "General"
+  },
+  {
+    "id": 138,
+    "en": "operand",
+    "ja": "演算対象",
+    "category": "General"
+  },
+  {
+    "id": 105,
+    "en": "operate",
+    "ja": "演算する",
+    "category": "General"
+  },
+  {
+    "id": 104,
+    "en": "operation",
+    "ja": "演算",
+    "category": "General"
+  },
+  {
+    "id": 139,
+    "en": "operator",
+    "ja": "演算子",
+    "category": "General"
+  },
+  {
+    "id": 386,
+    "en": "optimal",
+    "ja": "最適な",
+    "category": "General"
+  },
+  {
+    "id": 484,
+    "en": "optimal",
+    "ja": "最適な",
+    "category": "General"
+  },
+  {
+    "id": 387,
+    "en": "optimality",
+    "ja": "最適性",
+    "category": "General"
+  },
+  {
+    "id": 485,
+    "en": "optimization",
+    "ja": "最適化",
+    "category": "General"
+  },
+  {
+    "id": 486,
+    "en": "optimize",
+    "ja": "最適化する",
+    "category": "General"
+  },
+  {
+    "id": 388,
+    "en": "optimum",
+    "ja": "最適値",
+    "category": "General"
+  },
+  {
+    "id": 3,
+    "en": "order",
+    "ja": "階数",
+    "category": "General"
+  },
+  {
+    "id": 41,
+    "en": "ordinal number",
+    "ja": "序数",
+    "category": "General"
+  },
+  {
+    "id": 425,
+    "en": "orient",
+    "ja": "向きづける",
+    "category": "General"
+  },
+  {
+    "id": 424,
+    "en": "orientation",
+    "ja": "向き",
+    "category": "General"
+  },
+  {
+    "id": 280,
+    "en": "orthogonal",
+    "ja": "直交する",
+    "category": "General"
+  },
+  {
+    "id": 279,
+    "en": "orthogonal matrix",
+    "ja": "直交行列",
+    "category": "General"
+  },
+  {
+    "id": 281,
+    "en": "orthonormal",
+    "ja": "正規直交の",
+    "category": "General"
+  },
+  {
+    "id": 40,
+    "en": "over ...",
+    "ja": "...で除す",
+    "category": "General"
+  },
+  {
+    "id": 113,
+    "en": "overflow",
+    "ja": "桁あふれ",
+    "category": "General"
+  },
+  {
+    "id": 487,
+    "en": "overflow",
+    "ja": "桁あふれ, オーバーフロー",
+    "category": "General"
+  },
+  {
+    "id": 180,
+    "en": "package",
+    "ja": "ひとまとめにする、ひとかたまり（にしたもの）",
+    "category": "General"
+  },
+  {
+    "id": 488,
+    "en": "parallel processing",
+    "ja": "並列処理",
+    "category": "General"
+  },
+  {
+    "id": 7,
+    "en": "parentheses, round brackets",
+    "ja": "かっこ、丸かっこ",
+    "category": "General"
+  },
+  {
+    "id": 146,
+    "en": "parenthesis",
+    "ja": "括弧",
+    "category": "General"
+  },
+  {
+    "id": 85,
+    "en": "partial",
+    "ja": "偏微分",
+    "category": "General"
+  },
+  {
+    "id": 84,
+    "en": "partial derivative",
+    "ja": "偏導関数",
+    "category": "General"
+  },
+  {
+    "id": 489,
+    "en": "partial sum",
+    "ja": "部分和",
+    "category": "General"
+  },
+  {
+    "id": 414,
+    "en": "pattern recognition",
+    "ja": "パターン認識",
+    "category": "General"
+  },
+  {
+    "id": 490,
+    "en": "perform",
+    "ja": "実行",
+    "category": "General"
+  },
+  {
+    "id": 373,
+    "en": "pixel",
+    "ja": "画素",
+    "category": "General"
+  },
+  {
+    "id": 422,
+    "en": "planar",
+    "ja": "平面的な",
+    "category": "General"
+  },
+  {
+    "id": 78,
+    "en": "plus",
+    "ja": "プラス",
+    "category": "General"
+  },
+  {
+    "id": 52,
+    "en": "polynomial",
+    "ja": "多項式",
+    "category": "General"
+  },
+  {
+    "id": 491,
+    "en": "polynomial",
+    "ja": "多項式",
+    "category": "General"
+  },
+  {
+    "id": 43,
+    "en": "positive",
+    "ja": "正",
+    "category": "General"
+  },
+  {
+    "id": 262,
+    "en": "positive definite",
+    "ja": "正値の",
+    "category": "General"
+  },
+  {
+    "id": 263,
+    "en": "positive semidefinite",
+    "ja": "半正値の",
+    "category": "General"
+  },
+  {
+    "id": 169,
+    "en": "postfix",
+    "ja": "後置",
+    "category": "General"
+  },
+  {
+    "id": 82,
+    "en": "power",
+    "ja": "べき",
+    "category": "General"
+  },
+  {
+    "id": 492,
+    "en": "power",
+    "ja": "べき乗",
+    "category": "General"
+  },
+  {
+    "id": 194,
+    "en": "precede",
+    "ja": "優先する",
+    "category": "General"
+  },
+  {
+    "id": 195,
+    "en": "precedence",
+    "ja": "優先順位",
+    "category": "General"
+  },
+  {
+    "id": 496,
+    "en": "precision",
+    "ja": "精度",
+    "category": "General"
+  },
+  {
+    "id": 493,
+    "en": "preconditioning",
+    "ja": "前処理",
+    "category": "General"
+  },
+  {
+    "id": 35,
+    "en": "predicate",
+    "ja": "述語",
+    "category": "General"
+  },
+  {
+    "id": 428,
+    "en": "predict",
+    "ja": "予測する",
+    "category": "General"
+  },
+  {
+    "id": 427,
+    "en": "prediction",
+    "ja": "予測",
+    "category": "General"
+  },
+  {
+    "id": 168,
+    "en": "prefix",
+    "ja": "前置",
+    "category": "General"
+  },
+  {
+    "id": 341,
+    "en": "premise",
+    "ja": "前提",
+    "category": "General"
+  },
+  {
+    "id": 494,
+    "en": "preprocessing",
+    "ja": "前処理",
+    "category": "General"
+  },
+  {
+    "id": 495,
+    "en": "preserve",
+    "ja": "保存する",
+    "category": "General"
+  },
+  {
+    "id": 55,
+    "en": "prime",
+    "ja": "ダッシュ",
+    "category": "General"
+  },
+  {
+    "id": 393,
+    "en": "principal component analysis",
+    "ja": "主成分分析",
+    "category": "General"
+  },
+  {
+    "id": 497,
+    "en": "principle",
+    "ja": "原理",
+    "category": "General"
+  },
+  {
+    "id": 197,
+    "en": "probability",
+    "ja": "確率",
+    "category": "General"
+  },
+  {
+    "id": 498,
+    "en": "procedure",
+    "ja": "手続き, 手順",
+    "category": "General"
+  },
+  {
+    "id": 395,
+    "en": "process",
+    "ja": "処理する、（個々の）処理",
+    "category": "General"
+  },
+  {
+    "id": 394,
+    "en": "processing",
+    "ja": "処理（すること）",
+    "category": "General"
+  },
+  {
+    "id": 499,
+    "en": "processor",
+    "ja": "演算装置",
+    "category": "General"
+  },
+  {
+    "id": 45,
+    "en": "product",
+    "ja": "積",
+    "category": "General"
+  },
+  {
+    "id": 183,
+    "en": "program",
+    "ja": "プログラム、プログラムする",
+    "category": "General"
+  },
+  {
+    "id": 327,
+    "en": "proof",
+    "ja": "証明",
+    "category": "General"
+  },
+  {
+    "id": 90,
+    "en": "proposition",
+    "ja": "命題",
+    "category": "General"
+  },
+  {
+    "id": 308,
+    "en": "propositional connective",
+    "ja": "命題結合子",
+    "category": "General"
+  },
+  {
+    "id": 364,
+    "en": "propositional formula",
+    "ja": "命題論理式",
+    "category": "General"
+  },
+  {
+    "id": 365,
+    "en": "propositional logic",
+    "ja": "命題論理",
+    "category": "General"
+  },
+  {
+    "id": 188,
+    "en": "protect",
+    "ja": "保護する",
+    "category": "General"
+  },
+  {
+    "id": 187,
+    "en": "protection",
+    "ja": "保護",
+    "category": "General"
+  },
+  {
+    "id": 328,
+    "en": "prove",
+    "ja": "証明する",
+    "category": "General"
+  },
+  {
+    "id": 500,
+    "en": "provided",
+    "ja": "～であれば",
+    "category": "General"
+  },
+  {
+    "id": 235,
+    "en": "pseudoinverse, generalized inverse",
+    "ja": "一般逆行列",
+    "category": "General"
+  },
+  {
+    "id": 501,
+    "en": "quadratic equation",
+    "ja": "2次方程式",
+    "category": "General"
+  },
+  {
+    "id": 231,
+    "en": "quadratic form",
+    "ja": "2次形式",
+    "category": "General"
+  },
+  {
+    "id": 502,
+    "en": "quadratic formula",
+    "ja": "2次方程式の解の公式",
+    "category": "General"
+  },
+  {
+    "id": 503,
+    "en": "quadruple precision",
+    "ja": "4倍精度",
+    "category": "General"
+  },
+  {
+    "id": 314,
+    "en": "quantifier",
+    "ja": "限定記号",
+    "category": "General"
+  },
+  {
+    "id": 33,
+    "en": "quantify",
+    "ja": "修飾する",
+    "category": "General"
+  },
+  {
+    "id": 36,
+    "en": "quotient",
+    "ja": "商",
+    "category": "General"
+  },
+  {
+    "id": 20,
+    "en": "radical symbol",
+    "ja": "根号",
+    "category": "General"
+  },
+  {
+    "id": 504,
+    "en": "radix",
+    "ja": "基底",
+    "category": "General"
+  },
+  {
+    "id": 83,
+    "en": "raise",
+    "ja": "べき乗する",
+    "category": "General"
+  },
+  {
+    "id": 198,
+    "en": "random variable",
+    "ja": "確率変数",
+    "category": "General"
+  },
+  {
+    "id": 296,
+    "en": "rank",
+    "ja": "ランク",
+    "category": "General"
+  },
+  {
+    "id": 93,
+    "en": "rational number",
+    "ja": "有理数",
+    "category": "General"
+  },
+  {
+    "id": 30,
+    "en": "real number",
+    "ja": "実数",
+    "category": "General"
+  },
+  {
+    "id": 12,
+    "en": "reciprocal",
+    "ja": "逆数",
+    "category": "General"
+  },
+  {
+    "id": 412,
+    "en": "recognition",
+    "ja": "認識",
+    "category": "General"
+  },
+  {
+    "id": 413,
+    "en": "recognize",
+    "ja": "認識する",
+    "category": "General"
+  },
+  {
+    "id": 267,
+    "en": "rectangular matrix",
+    "ja": "長方行列",
+    "category": "General"
+  },
+  {
+    "id": 505,
+    "en": "recurrence relation",
+    "ja": "漸化式",
+    "category": "General"
+  },
+  {
+    "id": 506,
+    "en": "recursion",
+    "ja": "再帰",
+    "category": "General"
+  },
+  {
+    "id": 507,
+    "en": "recursive relation",
+    "ja": "再帰関係",
+    "category": "General"
+  },
+  {
+    "id": 508,
+    "en": "redundancy",
+    "ja": "無駄な重複, 過剰",
+    "category": "General"
+  },
+  {
+    "id": 236,
+    "en": "reflection",
+    "ja": "鏡像、反転",
+    "category": "General"
+  },
+  {
+    "id": 509,
+    "en": "register",
+    "ja": "レジスタ (CPU内のメモリ)",
+    "category": "General"
+  },
+  {
+    "id": 371,
+    "en": "reinforcement learning",
+    "ja": "強化学習",
+    "category": "General"
+  },
+  {
+    "id": 301,
+    "en": "relation",
+    "ja": "関係",
+    "category": "General"
+  },
+  {
+    "id": 117,
+    "en": "relative error",
+    "ja": "相対誤差",
+    "category": "General"
+  },
+  {
+    "id": 510,
+    "en": "relative error",
+    "ja": "相対誤差",
+    "category": "General"
+  },
+  {
+    "id": 137,
+    "en": "remainder",
+    "ja": "余り、剰余",
+    "category": "General"
+  },
+  {
+    "id": 511,
+    "en": "representation",
+    "ja": "表現",
+    "category": "General"
+  },
+  {
+    "id": 512,
+    "en": "respectively",
+    "ja": "それぞれ",
+    "category": "General"
+  },
+  {
+    "id": 1,
+    "en": "right(-hand) side",
+    "ja": "右辺",
+    "category": "General"
+  },
+  {
+    "id": 19,
+    "en": "root",
+    "ja": "根",
+    "category": "General"
+  },
+  {
+    "id": 513,
+    "en": "root",
+    "ja": "(多項式の)根, 解",
+    "category": "General"
+  },
+  {
+    "id": 133,
+    "en": "round",
+    "ja": "丸める（四捨五入する）",
+    "category": "General"
+  },
+  {
+    "id": 514,
+    "en": "rounding",
+    "ja": "丸め",
+    "category": "General"
+  },
+  {
+    "id": 134,
+    "en": "roundoff error",
+    "ja": "丸め誤差",
+    "category": "General"
+  },
+  {
+    "id": 238,
+    "en": "row",
+    "ja": "行",
+    "category": "General"
+  },
+  {
+    "id": 332,
+    "en": "rule of inference",
+    "ja": "推論規則",
+    "category": "General"
+  },
+  {
+    "id": 201,
+    "en": "sample",
+    "ja": "サンプル",
+    "category": "General"
+  },
+  {
+    "id": 200,
+    "en": "sample space",
+    "ja": "サンプル空間",
+    "category": "General"
+  },
+  {
+    "id": 321,
+    "en": "satisfiable",
+    "ja": "充足可能",
+    "category": "General"
+  },
+  {
+    "id": 256,
+    "en": "scalar",
+    "ja": "スカラ",
+    "category": "General"
+  },
+  {
+    "id": 257,
+    "en": "scalar multiple",
+    "ja": "スカラ倍",
+    "category": "General"
+  },
+  {
+    "id": 254,
+    "en": "Schwarz inequality",
+    "ja": "シュワルツの不等式",
+    "category": "General"
+  },
+  {
+    "id": 417,
+    "en": "segment",
+    "ja": "分割する、分割部分",
+    "category": "General"
+  },
+  {
+    "id": 416,
+    "en": "segmentation",
+    "ja": "分割",
+    "category": "General"
+  },
+  {
+    "id": 298,
+    "en": "semantic",
+    "ja": "意味の",
+    "category": "General"
+  },
+  {
+    "id": 297,
+    "en": "semantics",
+    "ja": "意味論",
+    "category": "General"
+  },
+  {
+    "id": 419,
+    "en": "separate",
+    "ja": "分離する",
+    "category": "General"
+  },
+  {
+    "id": 418,
+    "en": "separation",
+    "ja": "分離",
+    "category": "General"
+  },
+  {
+    "id": 42,
+    "en": "sequence",
+    "ja": "数列",
+    "category": "General"
+  },
+  {
+    "id": 515,
+    "en": "sequence",
+    "ja": "数列",
+    "category": "General"
+  },
+  {
+    "id": 13,
+    "en": "series",
+    "ja": "級数",
+    "category": "General"
+  },
+  {
+    "id": 516,
+    "en": "series",
+    "ja": "級数",
+    "category": "General"
+  },
+  {
+    "id": 31,
+    "en": "set",
+    "ja": "集合",
+    "category": "General"
+  },
+  {
+    "id": 32,
+    "en": "set operation",
+    "ja": "集合演算",
+    "category": "General"
+  },
+  {
+    "id": 131,
+    "en": "sign",
+    "ja": "符号",
+    "category": "General"
+  },
+  {
+    "id": 517,
+    "en": "sign",
+    "ja": "符号",
+    "category": "General"
+  },
+  {
+    "id": 396,
+    "en": "signal",
+    "ja": "信号",
+    "category": "General"
+  },
+  {
+    "id": 397,
+    "en": "signal processing",
+    "ja": "信号処理",
+    "category": "General"
+  },
+  {
+    "id": 518,
+    "en": "signature",
+    "ja": "符号",
+    "category": "General"
+  },
+  {
+    "id": 135,
+    "en": "significant digit",
+    "ja": "有効数字",
+    "category": "General"
+  },
+  {
+    "id": 519,
+    "en": "significant digit",
+    "ja": "有効数字",
+    "category": "General"
+  },
+  {
+    "id": 520,
+    "en": "simultaneously",
+    "ja": "同時に",
+    "category": "General"
+  },
+  {
+    "id": 521,
+    "en": "single precision",
+    "ja": "単精度",
+    "category": "General"
+  },
+  {
+    "id": 261,
+    "en": "singular",
+    "ja": "特異な",
+    "category": "General"
+  },
+  {
+    "id": 289,
+    "en": "singular value decomposition",
+    "ja": "特異値分解",
+    "category": "General"
+  },
+  {
+    "id": 2,
+    "en": "solution",
+    "ja": "解",
+    "category": "General"
+  },
+  {
+    "id": 312,
+    "en": "sound",
+    "ja": "健全な",
+    "category": "General"
+  },
+  {
+    "id": 313,
+    "en": "soundness",
+    "ja": "健全性",
+    "category": "General"
+  },
+  {
+    "id": 360,
+    "en": "specific",
+    "ja": "特定の",
+    "category": "General"
+  },
+  {
+    "id": 359,
+    "en": "specification",
+    "ja": "特定化",
+    "category": "General"
+  },
+  {
+    "id": 358,
+    "en": "specify",
+    "ja": "特定する",
+    "category": "General"
+  },
+  {
+    "id": 288,
+    "en": "spectral decomposition",
+    "ja": "スペクトル分解",
+    "category": "General"
+  },
+  {
+    "id": 415,
+    "en": "speech recognition",
+    "ja": "音声認識",
+    "category": "General"
+  },
+  {
+    "id": 366,
+    "en": "speech, sound",
+    "ja": "音声",
+    "category": "General"
+  },
+  {
+    "id": 24,
+    "en": "square",
+    "ja": "二乗（する）",
+    "category": "General"
+  },
+  {
+    "id": 266,
+    "en": "square matrix",
+    "ja": "正方行列",
+    "category": "General"
+  },
+  {
+    "id": 81,
+    "en": "square root",
+    "ja": "平方根",
+    "category": "General"
+  },
+  {
+    "id": 216,
+    "en": "standard deviation",
+    "ja": "標準偏差",
+    "category": "General"
+  },
+  {
+    "id": 286,
+    "en": "standard, canonical",
+    "ja": "標準の",
+    "category": "General"
+  },
+  {
+    "id": 315,
+    "en": "state",
+    "ja": "言明する",
+    "category": "General"
+  },
+  {
+    "id": 185,
+    "en": "statement",
+    "ja": "文、言明",
+    "category": "General"
+  },
+  {
+    "id": 211,
+    "en": "statistically",
+    "ja": "統計的に",
+    "category": "General"
+  },
+  {
+    "id": 210,
+    "en": "statistics",
+    "ja": "統計学",
+    "category": "General"
+  },
+  {
+    "id": 106,
+    "en": "store",
+    "ja": "記憶する（計算機内部に保存する）",
+    "category": "General"
+  },
+  {
+    "id": 522,
+    "en": "store",
+    "ja": "(メモリに)格納する",
+    "category": "General"
+  },
+  {
+    "id": 191,
+    "en": "string",
+    "ja": "文字列",
+    "category": "General"
+  },
+  {
+    "id": 305,
+    "en": "string of symbols",
+    "ja": "記号列",
+    "category": "General"
+  },
+  {
+    "id": 240,
+    "en": "submatrix",
+    "ja": "小行列",
+    "category": "General"
+  },
+  {
+    "id": 29,
+    "en": "subscript",
+    "ja": "下添え字",
+    "category": "General"
+  },
+  {
+    "id": 523,
+    "en": "subsequence",
+    "ja": "部分数列 (≠ subsequence 結果)",
+    "category": "General"
+  },
+  {
+    "id": 77,
+    "en": "subset",
+    "ja": "部分集合",
+    "category": "General"
+  },
+  {
+    "id": 349,
+    "en": "substitute",
+    "ja": "代入する",
+    "category": "General"
+  },
+  {
+    "id": 348,
+    "en": "substitution",
+    "ja": "代入",
+    "category": "General"
+  },
+  {
+    "id": 67,
+    "en": "subtract",
+    "ja": "引く",
+    "category": "General"
+  },
+  {
+    "id": 65,
+    "en": "subtraction",
+    "ja": "引き算",
+    "category": "General"
+  },
+  {
+    "id": 524,
+    "en": "successive",
+    "ja": "引き続く, 後続の",
+    "category": "General"
+  },
+  {
+    "id": 525,
+    "en": "successively",
+    "ja": "逐次的に",
+    "category": "General"
+  },
+  {
+    "id": 326,
+    "en": "sufficient condition",
+    "ja": "十分条件",
+    "category": "General"
+  },
+  {
+    "id": 100,
+    "en": "sum",
+    "ja": "和",
+    "category": "General"
+  },
+  {
+    "id": 0,
+    "en": "superscript",
+    "ja": "上添え字",
+    "category": "General"
+  },
+  {
+    "id": 37,
+    "en": "superset",
+    "ja": "上位集合",
+    "category": "General"
+  },
+  {
+    "id": 369,
+    "en": "supervised learning",
+    "ja": "教師あり学習",
+    "category": "General"
+  },
+  {
+    "id": 276,
+    "en": "symmetric matrix",
+    "ja": "対称行列",
+    "category": "General"
+  },
+  {
+    "id": 317,
+    "en": "syntax",
+    "ja": "構文、構文論",
+    "category": "General"
+  },
+  {
+    "id": 426,
+    "en": "target",
+    "ja": "目標",
+    "category": "General"
+  },
+  {
+    "id": 316,
+    "en": "tautology",
+    "ja": "恒真式、トートロジー",
+    "category": "General"
+  },
+  {
+    "id": 526,
+    "en": "Taylor expansion",
+    "ja": "テーラー展開",
+    "category": "General"
+  },
+  {
+    "id": 18,
+    "en": "term",
+    "ja": "項",
+    "category": "General"
+  },
+  {
+    "id": 112,
+    "en": "the ~th decimal place",
+    "ja": "小数点以下第〜桁",
+    "category": "General"
+  },
+  {
+    "id": 350,
+    "en": "theorem",
+    "ja": "定理",
+    "category": "General"
+  },
+  {
+    "id": 64,
+    "en": "times",
+    "ja": "...倍",
+    "category": "General"
+  },
+  {
+    "id": 283,
+    "en": "trace",
+    "ja": "トレース",
+    "category": "General"
+  },
+  {
+    "id": 410,
+    "en": "trade-off",
+    "ja": "トレードオフ、妥協",
+    "category": "General"
+  },
+  {
+    "id": 527,
+    "en": "transformation",
+    "ja": "変換",
+    "category": "General"
+  },
+  {
+    "id": 282,
+    "en": "transpose",
+    "ja": "転置、転置行列",
+    "category": "General"
+  },
+  {
+    "id": 391,
+    "en": "trial and error",
+    "ja": "試行錯誤",
+    "category": "General"
+  },
+  {
+    "id": 255,
+    "en": "triangular inequality",
+    "ja": "三角不等式",
+    "category": "General"
+  },
+  {
+    "id": 528,
+    "en": "trigonometric function",
+    "ja": "三角関数",
+    "category": "General"
+  },
+  {
+    "id": 529,
+    "en": "truncation error",
+    "ja": "打ち切り誤差",
+    "category": "General"
+  },
+  {
+    "id": 329,
+    "en": "truth table",
+    "ja": "真理値表",
+    "category": "General"
+  },
+  {
+    "id": 149,
+    "en": "type",
+    "ja": "型",
+    "category": "General"
+  },
+  {
+    "id": 140,
+    "en": "unary operator",
+    "ja": "単項演算子",
+    "category": "General"
+  },
+  {
+    "id": 156,
+    "en": "unauthorized",
+    "ja": "権限のない",
+    "category": "General"
+  },
+  {
+    "id": 206,
+    "en": "uncorrelated",
+    "ja": "相関のない",
+    "category": "General"
+  },
+  {
+    "id": 530,
+    "en": "underflow",
+    "ja": "アンダーフロー",
+    "category": "General"
+  },
+  {
+    "id": 531,
+    "en": "understood",
+    "ja": "～と約束する",
+    "category": "General"
+  },
+  {
+    "id": 229,
+    "en": "unique",
+    "ja": "一義的な",
+    "category": "General"
+  },
+  {
+    "id": 50,
+    "en": "universal quantifier",
+    "ja": "全称記号",
+    "category": "General"
+  },
+  {
+    "id": 340,
+    "en": "universe",
+    "ja": "世界（論理を考えている）",
+    "category": "General"
+  },
+  {
+    "id": 370,
+    "en": "unsupervised learning",
+    "ja": "教師なし学習",
+    "category": "General"
+  },
+  {
+    "id": 193,
+    "en": "user-defined",
+    "ja": "ユーザー定義の",
+    "category": "General"
+  },
+  {
+    "id": 136,
+    "en": "value",
+    "ja": "値",
+    "category": "General"
+  },
+  {
+    "id": 532,
+    "en": "value",
+    "ja": "値",
+    "category": "General"
+  },
+  {
+    "id": 186,
+    "en": "variable",
+    "ja": "変数",
+    "category": "General"
+  },
+  {
+    "id": 217,
+    "en": "variance",
+    "ja": "分散",
+    "category": "General"
+  },
+  {
+    "id": 290,
+    "en": "vector",
+    "ja": "ベクトル",
+    "category": "General"
+  },
+  {
+    "id": 291,
+    "en": "vector space",
+    "ja": "ベクトル空間",
+    "category": "General"
+  },
+  {
+    "id": 311,
+    "en": "verifiable",
+    "ja": "検証可能",
+    "category": "General"
+  },
+  {
+    "id": 309,
+    "en": "verification",
+    "ja": "検証",
+    "category": "General"
+  },
+  {
+    "id": 310,
+    "en": "verify",
+    "ja": "検証する",
+    "category": "General"
+  },
+  {
+    "id": 232,
+    "en": "weight",
+    "ja": "重み、重みづける",
+    "category": "General"
+  },
+  {
+    "id": 335,
+    "en": "well-formed",
+    "ja": "整合（規則に従って定義された）",
+    "category": "General"
+  },
+  {
+    "id": 336,
+    "en": "well-formed formula (wff)",
+    "ja": "整合論理式",
+    "category": "General"
+  },
+  {
+    "id": 96,
+    "en": "zero, naught",
+    "ja": "零",
+    "category": "General"
+  }
+]
