@@ -16,7 +16,6 @@ function App() {
     return saved ? JSON.parse(saved) : { learning: 0, reviewing: 0, mastered: 0 };
   });
 
-  // Track if user has seen help before
   const [hasSeenHelp, setHasSeenHelp] = useState(() => {
     return localStorage.getItem('hasSeenHelp') === 'true';
   });
@@ -66,8 +65,10 @@ function App() {
   const handleNext = () => {
     setShowAnswer(false);
     if (activeWords.length > 0) {
-      const nextIndex = (safeIndex + 1) % activeWords.length;
-      setIndices(prev => ({ ...prev, [currentMode]: nextIndex }));
+      setTimeout(() => {
+        const nextIndex = (safeIndex + 1) % activeWords.length;
+        setIndices(prev => ({ ...prev, [currentMode]: nextIndex }));
+      }, 300);
     }
   };
 
@@ -107,7 +108,6 @@ function App() {
       setCurrentMode('learning');
       setIsSettingsOpen(false);
       
-      // Reset help flag too so they see the tutorial again
       setHasSeenHelp(false);
       localStorage.removeItem('hasSeenHelp');
     }
