@@ -1,56 +1,19 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect } from 'react';
 import Flashcard from './components/Flashcard';
 import { Check, X, BookOpen, Trophy, Settings, RotateCcw, Brain, GraduationCap, Layers, CircleHelp } from 'lucide-react';
 import vocabularyData from './data/vocabulary.json';
 
-const TabButton = ({ isActive, onClick, count, icon, label, color }) => {
-  const Icon = icon;
-  // Explicit Tailwind classes for JIT compiler safety
-  const activeClasses = {
-    blue: 'border-blue-500 text-blue-600 bg-blue-50',
-    yellow: 'border-yellow-500 text-yellow-600 bg-yellow-50',
-    green: 'border-green-500 text-green-600 bg-green-50'
-  };
-
-  return (
-    <button
-      onClick={onClick}
-      className={`flex-1 py-2 flex flex-col items-center justify-center transition-all border-b-2 ${
-        isActive ? activeClasses[color] : 'border-transparent text-gray-400 hover:text-gray-600'
-      }`}
-    >
-      <div className="flex items-center space-x-1">
-        <Icon size={18} />
-        <span className="text-xs font-bold uppercase">{label}</span>
-      </div>
-      <span className="text-xs font-mono mt-0.5">{count}</span>
-    </button>
-  );
-};
-
 function App() {
-  // --- State Initialization ---
-  
   const [wordStatus, setWordStatus] = useState(() => {
-    try {
-      const saved = localStorage.getItem('wordStatus');
-      return saved ? JSON.parse(saved) : {};
-    } catch (e) {
-      console.error('Failed to parse wordStatus from localStorage', e);
-      return {};
-    }
+    const saved = localStorage.getItem('wordStatus');
+    return saved ? JSON.parse(saved) : {};
   });
 
   const [currentMode, setCurrentMode] = useState('learning');
 
   const [indices, setIndices] = useState(() => {
-    try {
-      const saved = localStorage.getItem('modeIndices');
-      return saved ? JSON.parse(saved) : { learning: 0, reviewing: 0, mastered: 0 };
-    } catch (e) {
-      console.error('Failed to parse modeIndices from localStorage', e);
-      return { learning: 0, reviewing: 0, mastered: 0 };
-    }
+    const saved = localStorage.getItem('modeIndices');
+    return saved ? JSON.parse(saved) : { learning: 0, reviewing: 0, mastered: 0 };
   });
 
   const [hasSeenHelp, setHasSeenHelp] = useState(() => {
@@ -60,11 +23,11 @@ function App() {
   const [showAnswer, setShowAnswer] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [isHelpOpen, setIsHelpOpen] = useState(false);
-  
-  // Use vocabularyData directly to avoid first-render flicker
-  const [words] = useState(vocabularyData);
+  const [words, setWords] = useState([]);
 
-  // --- Persistence ---
+  useEffect(() => {
+    setWords(vocabularyData);
+  }, []);
 
   useEffect(() => {
     localStorage.setItem('wordStatus', JSON.stringify(wordStatus));
@@ -74,34 +37,22 @@ function App() {
     localStorage.setItem('modeIndices', JSON.stringify(indices));
   }, [indices]);
 
-  // --- Derived State (Memoized for performance) ---
-
-  const activeWords = useMemo(() => {
-    return words.filter(w => {
-      const status = wordStatus[w.id] || 'learning';
-      return status === currentMode;
-    });
-  }, [words, wordStatus, currentMode]);
-
-  const counts = useMemo(() => {
-    const res = { learning: 0, reviewing: 0, mastered: 0 };
-    words.forEach(w => {
-      const status = wordStatus[w.id] || 'learning';
-      res[status]++;
-    });
-    return res;
-  }, [words, wordStatus]);
-
-  const progress = useMemo(() => {
-    if (words.length === 0) return 0;
-    return Math.round((counts.mastered / words.length) * 100);
-  }, [counts.mastered, words.length]);
+  const activeWords = words.filter(w => {
+    const status = wordStatus[w.id] || 'learning';
+    return status === currentMode;
+  });
 
   const currentIndex = indices[currentMode] || 0;
   const safeIndex = activeWords.length > 0 ? currentIndex % activeWords.length : 0;
   const currentWord = activeWords[safeIndex];
 
-  // --- Handlers ---
+  const counts = {
+    learning: words.filter(w => (wordStatus[w.id] || 'learning') === 'learning').length,
+    reviewing: words.filter(w => wordStatus[w.id] === 'reviewing').length,
+    mastered: words.filter(w => wordStatus[w.id] === 'mastered').length,
+  };
+
+  const progress = Math.round((counts.mastered / words.length) * 100);
 
   const handleOpenHelp = () => {
     setIsHelpOpen(true);
@@ -114,7 +65,6 @@ function App() {
   const handleNext = () => {
     setShowAnswer(false);
     if (activeWords.length > 0) {
-      // Small delay to allow flip animation to finish before showing new word content
       setTimeout(() => {
         const nextIndex = (safeIndex + 1) % activeWords.length;
         setIndices(prev => ({ ...prev, [currentMode]: nextIndex }));
@@ -132,16 +82,11 @@ function App() {
     
     setShowAnswer(false);
     
-    // When a word moves out of the current mode, we might need to adjust the index.
-    // If we're at the last word, wrap to 0. Otherwise, the "next" word naturally
-    // shifts into the current index position.
-    
-    // Delay index update slightly to sync with flip back
-    setTimeout(() => {
-      if (activeWords.length <= 1 || safeIndex >= activeWords.length - 1) {
-        setIndices(prev => ({ ...prev, [currentMode]: 0 }));
-      }
-    }, 300);
+    if (activeWords.length <= 1) {
+      setIndices(prev => ({ ...prev, [currentMode]: 0 }));
+    } else if (safeIndex >= activeWords.length - 1) {
+      setIndices(prev => ({ ...prev, [currentMode]: 0 }));
+    }
   };
 
   const promote = () => {
@@ -157,17 +102,36 @@ function App() {
   };
 
   const resetAllProgress = () => {
-    if (window.confirm('Are you sure you want to reset ALL progress? This cannot be undone.')) {
+    if (confirm('Are you sure you want to reset ALL progress? This cannot be undone.')) {
       setWordStatus({});
       setIndices({ learning: 0, reviewing: 0, mastered: 0 });
       setCurrentMode('learning');
       setIsSettingsOpen(false);
+      
       setHasSeenHelp(false);
       localStorage.removeItem('hasSeenHelp');
     }
   };
 
-
+  const TabButton = ({ mode, icon: Icon, label, colorClass }) => (
+    <button
+      onClick={() => {
+        setCurrentMode(mode);
+        setShowAnswer(false);
+      }}
+      className={`flex-1 py-2 flex flex-col items-center justify-center transition-all border-b-2 ${
+        currentMode === mode 
+          ? `border-${colorClass}-500 text-${colorClass}-600 bg-${colorClass}-50` 
+          : 'border-transparent text-gray-400 hover:text-gray-600'
+      }`}
+    >
+      <div className="flex items-center space-x-1">
+        <Icon size={18} />
+        <span className="text-xs font-bold uppercase">{label}</span>
+      </div>
+      <span className="text-xs font-mono mt-0.5">{counts[mode]}</span>
+    </button>
+  );
 
   return (
     <div className="h-[100dvh] w-full bg-gray-50 flex flex-col overflow-hidden font-sans text-gray-800">
@@ -185,7 +149,7 @@ function App() {
             >
               <CircleHelp size={20} />
             </button>
-            {!hasSeenHelp && !isHelpOpen && (
+            {!hasSeenHelp && (
               <div className="absolute top-10 right-0 bg-indigo-600 text-white text-xs font-bold py-1 px-3 rounded-lg shadow-lg whitespace-nowrap animate-bounce z-20">
                 Click here first!
                 <div className="absolute -top-1 right-3 w-2 h-2 bg-indigo-600 transform rotate-45"></div>
@@ -209,30 +173,9 @@ function App() {
       </div>
 
       <div className="flex bg-white border-b border-gray-100 shrink-0">
-        <TabButton 
-          isActive={currentMode === 'learning'} 
-          onClick={() => { setCurrentMode('learning'); setShowAnswer(false); }} 
-          count={counts.learning}
-          icon={Layers} 
-          label="Learning" 
-          color="blue" 
-        />
-        <TabButton 
-          isActive={currentMode === 'reviewing'} 
-          onClick={() => { setCurrentMode('reviewing'); setShowAnswer(false); }} 
-          count={counts.reviewing}
-          icon={Brain} 
-          label="Reviewing" 
-          color="yellow" 
-        />
-        <TabButton 
-          isActive={currentMode === 'mastered'} 
-          onClick={() => { setCurrentMode('mastered'); setShowAnswer(false); }} 
-          count={counts.mastered}
-          icon={GraduationCap} 
-          label="Mastered" 
-          color="green" 
-        />
+        <TabButton mode="learning" icon={Layers} label="Learning" colorClass="blue" />
+        <TabButton mode="reviewing" icon={Brain} label="Reviewing" colorClass="yellow" />
+        <TabButton mode="mastered" icon={GraduationCap} label="Mastered" colorClass="green" />
       </div>
 
       <main className="flex-1 relative flex flex-col items-center justify-center p-4 bg-gray-50 overflow-y-auto">
@@ -272,7 +215,7 @@ function App() {
             disabled={activeWords.length === 0}
             className={`flex flex-col items-center justify-center py-3.5 px-2 rounded-xl border-2 transition-all active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed ${
               currentMode === 'learning' 
-                ? 'bg-gray-50 border-gray-200 text-gray-400' 
+                ? 'bg-gray-50 border-gray-200 text-gray-500' 
                 : 'bg-orange-50 border-orange-100 text-orange-600'
             }`}
           >
@@ -287,7 +230,7 @@ function App() {
             disabled={activeWords.length === 0}
             className={`flex flex-col items-center justify-center py-3.5 px-2 rounded-xl border-2 transition-all active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed ${
               currentMode === 'mastered'
-                ? 'bg-gray-50 border-gray-200 text-gray-400'
+                ? 'bg-gray-50 border-gray-200 text-gray-500'
                 : 'bg-indigo-50 border-indigo-100 text-indigo-600'
             }`}
           >
@@ -339,7 +282,7 @@ function App() {
       {isHelpOpen && (
         <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 backdrop-blur-sm" onClick={() => setIsHelpOpen(false)}>
           <div className="bg-white rounded-2xl w-full max-w-md shadow-2xl overflow-hidden" onClick={e => e.stopPropagation()}>
-            <div className="p-6 max-h-[80vh] overflow-y-auto">
+            <div className="p-6">
               <h2 className="text-xl font-bold text-gray-800 mb-4">アプリの使い方</h2>
               
               <div className="space-y-6 text-sm text-gray-700">
