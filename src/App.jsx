@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import Flashcard from './components/Flashcard';
-import { Check, X, BookOpen, Trophy, Settings, RotateCcw, Brain, GraduationCap, Layers, CircleHelp } from 'lucide-react';
+import { Check, X, BookOpen, Trophy, Settings, RotateCcw, Brain, GraduationCap, Layers, CircleHelp, ArrowLeft } from 'lucide-react';
 import vocabularyData from './data/vocabulary.json';
 
 const TabButton = ({ isActive, onClick, count, icon, label, color }) => {
@@ -451,6 +451,16 @@ function App() {
                       <div>
                         <span className="font-bold text-gray-800 block">Next / Skip</span>
                         <span className="text-gray-600 text-xs">ステータスを変えずに、次の単語へ進みます。</span>
+                      </div>
+                    </div>
+
+                    <div className="bg-gray-50 p-3 rounded-lg border border-gray-100 flex items-start">
+                      <div className="bg-gray-200 text-gray-600 p-2 rounded-lg mr-3 shrink-0">
+                        <ArrowLeft size={20} />
+                      </div>
+                      <div>
+                        <span className="font-bold text-gray-800 block">1つ戻る (Undo)</span>
+                        <span className="text-gray-600 text-xs">カード左上の矢印ボタンで、直前の操作を取り消せます。</span>
                       </div>
                     </div>
                   </div>
