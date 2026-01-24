@@ -57,6 +57,8 @@ function App() {
     return localStorage.getItem('hasSeenHelp') === 'true';
   });
 
+  const [history, setHistory] = useState([]); // Undo history
+
   const [showAnswer, setShowAnswer] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [isHelpOpen, setIsHelpOpen] = useState(false);
@@ -114,6 +116,18 @@ function App() {
   const handleNext = () => {
     // 1. Flip back to front
     setShowAnswer(false);
+
+    // Save history before moving
+    if (activeWords.length > 0) {
+      setHistory(prev => {
+        const newHistory = [...prev, {
+          type: 'navigation',
+          indices: { ...indices },
+          mode: currentMode
+        }];
+        return newHistory.slice(-10); // Keep last 10
+      });
+    }
     
     // 2. Wait for animation, then change word
     if (activeWords.length > 0) {
@@ -129,6 +143,18 @@ function App() {
     
     // 1. Flip back to front FIRST
     setShowAnswer(false);
+
+    // Save history before updating status
+    setHistory(prev => {
+      const newHistory = [...prev, {
+        type: 'status',
+        indices: { ...indices },
+        wordId: currentWord.id,
+        previousStatus: wordStatus[currentWord.id] || 'learning',
+        mode: currentMode
+      }];
+      return newHistory.slice(-10); // Keep last 10
+    });
     
     // 2. Wait for animation, then update data
     setTimeout(() => {
@@ -144,6 +170,26 @@ function App() {
         setIndices(prev => ({ ...prev, [currentMode]: 0 }));
       }
     }, 300);
+  };
+
+  const handleUndo = () => {
+    if (history.length === 0) return;
+
+    const lastAction = history[history.length - 1];
+    setHistory(prev => prev.slice(0, -1));
+    setShowAnswer(false); // Reset flip state on undo
+
+    if (lastAction.type === 'navigation') {
+      setIndices(lastAction.indices);
+      setCurrentMode(lastAction.mode);
+    } else if (lastAction.type === 'status') {
+      setWordStatus(prev => ({
+        ...prev,
+        [lastAction.wordId]: lastAction.previousStatus
+      }));
+      setIndices(lastAction.indices);
+      setCurrentMode(lastAction.mode);
+    }
   };
 
   const promote = () => {
@@ -162,6 +208,7 @@ function App() {
     if (window.confirm('Are you sure you want to reset ALL progress? This cannot be undone.')) {
       setWordStatus({});
       setIndices({ learning: 0, reviewing: 0, mastered: 0 });
+      setHistory([]); // Clear history
       setCurrentMode('learning');
       setIsSettingsOpen(false);
       setHasSeenHelp(false);
@@ -245,7 +292,9 @@ function App() {
               <Flashcard 
                 word={currentWord} 
                 showAnswer={showAnswer} 
-                onFlip={() => setShowAnswer(!showAnswer)} 
+                onFlip={() => setShowAnswer(!showAnswer)}
+                onUndo={handleUndo}
+                canUndo={history.length > 0} 
               />
             </div>
             <div className="text-gray-400 text-sm mt-6 font-mono font-medium tracking-wider">

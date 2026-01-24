@@ -1,7 +1,7 @@
 import React from 'react';
-import { RotateCcw } from 'lucide-react';
+import { RotateCcw, ArrowLeft } from 'lucide-react';
 
-export default function Flashcard({ word, showAnswer, onFlip }) {
+export default function Flashcard({ word, showAnswer, onFlip, onUndo, canUndo }) {
   if (!word) return null;
 
   return (
@@ -13,7 +13,23 @@ export default function Flashcard({ word, showAnswer, onFlip }) {
         
         {/* Front Side (English) */}
         <div className="absolute inset-0 bg-white rounded-2xl shadow-xl flex flex-col items-center justify-center backface-hidden border border-gray-100 p-6">
-          <span className="text-xs font-bold tracking-wider text-gray-400 absolute top-6 left-6">ENGLISH</span>
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              onUndo();
+            }}
+            disabled={!canUndo}
+            className={`absolute top-4 left-4 p-2 rounded-full transition-all z-20 ${
+              canUndo 
+                ? 'text-gray-400 hover:text-gray-700 hover:bg-gray-100' 
+                : 'text-gray-200 cursor-not-allowed'
+            }`}
+            aria-label="Undo"
+          >
+            <ArrowLeft size={20} />
+          </button>
+
+          <span className="text-xs font-bold tracking-wider text-gray-400 absolute top-6 right-6">ENGLISH</span>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center leading-tight break-words max-w-full">
             {word.en}
           </h2>
