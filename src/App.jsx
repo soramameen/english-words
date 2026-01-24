@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import Flashcard from './components/Flashcard';
 import { Check, X, BookOpen, Trophy, Settings, RotateCcw, Brain, GraduationCap, Layers, CircleHelp, ArrowLeft } from 'lucide-react';
 import vocabularyData from './data/vocabulary.json';
@@ -113,11 +113,9 @@ function App() {
     }
   };
 
-  const handleNext = () => {
-    // 1. Flip back to front
+  const handleNext = useCallback(() => {
     setShowAnswer(false);
 
-    // Save history before moving
     if (activeWords.length > 0) {
       setHistory(prev => {
         const newHistory = [...prev, {
@@ -125,26 +123,23 @@ function App() {
           indices: { ...indices },
           mode: currentMode
         }];
-        return newHistory.slice(-10); // Keep last 10
+        return newHistory.slice(-10);
       });
     }
-    
-    // 2. Wait for animation, then change word
+
     if (activeWords.length > 0) {
       setTimeout(() => {
         const nextIndex = (safeIndex + 1) % activeWords.length;
         setIndices(prev => ({ ...prev, [currentMode]: nextIndex }));
       }, 300);
     }
-  };
+  }, [activeWords.length, indices, currentMode, safeIndex]);
 
-  const updateStatus = (newStatus) => {
+  const updateStatus = useCallback((newStatus) => {
     if (!currentWord) return;
-    
-    // 1. Flip back to front FIRST
+
     setShowAnswer(false);
 
-    // Save history before updating status
     setHistory(prev => {
       const newHistory = [...prev, {
         type: 'status',
@@ -153,31 +148,27 @@ function App() {
         previousStatus: wordStatus[currentWord.id] || 'learning',
         mode: currentMode
       }];
-      return newHistory.slice(-10); // Keep last 10
+      return newHistory.slice(-10);
     });
-    
-    // 2. Wait for animation, then update data
+
     setTimeout(() => {
       setWordStatus(prev => ({
         ...prev,
         [currentWord.id]: newStatus
       }));
-      
-      // When a word moves out of the current mode, we might need to adjust the index.
-      // If we're at the last word, wrap to 0. Otherwise, the "next" word naturally
-      // shifts into the current index position.
+
       if (activeWords.length <= 1 || safeIndex >= activeWords.length - 1) {
         setIndices(prev => ({ ...prev, [currentMode]: 0 }));
       }
     }, 300);
-  };
+  }, [currentWord, activeWords.length, indices, currentMode, wordStatus, safeIndex]);
 
-  const handleUndo = () => {
+  const handleUndo = useCallback(() => {
     if (history.length === 0) return;
 
     const lastAction = history[history.length - 1];
     setHistory(prev => prev.slice(0, -1));
-    setShowAnswer(false); // Reset flip state on undo
+    setShowAnswer(false);
 
     if (lastAction.type === 'navigation') {
       setIndices(lastAction.indices);
@@ -190,19 +181,19 @@ function App() {
       setIndices(lastAction.indices);
       setCurrentMode(lastAction.mode);
     }
-  };
+  }, [history]);
 
-  const promote = () => {
+  const promote = useCallback(() => {
     if (currentMode === 'learning') updateStatus('reviewing');
     else if (currentMode === 'reviewing') updateStatus('mastered');
     else handleNext();
-  };
+  }, [currentMode, updateStatus, handleNext]);
 
-  const demote = () => {
+  const demote = useCallback(() => {
     if (currentMode === 'mastered') updateStatus('reviewing');
     else if (currentMode === 'reviewing') updateStatus('learning');
     else handleNext();
-  };
+  }, [currentMode, updateStatus, handleNext]);
 
   const resetAllProgress = () => {
     if (window.confirm('Are you sure you want to reset ALL progress? This cannot be undone.')) {
@@ -215,6 +206,37 @@ function App() {
       localStorage.removeItem('hasSeenHelp');
     }
   };
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+        return;
+      }
+
+      if (e.code === 'Space' && activeWords.length > 0) {
+        e.preventDefault();
+        setShowAnswer(!showAnswer);
+      }
+
+      if (e.code === 'ArrowRight' && activeWords.length > 0) {
+        e.preventDefault();
+        promote();
+      }
+
+      if (e.code === 'ArrowLeft' && activeWords.length > 0) {
+        e.preventDefault();
+        demote();
+      }
+
+      if (e.code === 'Backspace' && history.length > 0) {
+        e.preventDefault();
+        handleUndo();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [activeWords.length, showAnswer, promote, demote, handleUndo, history.length]);
 
 
 
@@ -321,12 +343,15 @@ function App() {
           <button 
             onClick={demote}
             disabled={activeWords.length === 0}
-            className={`flex flex-col items-center justify-center py-3.5 px-2 rounded-xl border-2 transition-all active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed ${
+            className={`relative flex flex-col items-center justify-center py-3.5 px-2 rounded-xl border-2 transition-all active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed ${
               currentMode === 'learning' 
                 ? 'bg-gray-50 border-gray-200 text-gray-400' 
                 : 'bg-orange-50 border-orange-100 text-orange-600'
             }`}
           >
+            <kbd className="absolute top-2 left-2 text-[10px] font-mono opacity-50 border border-current rounded px-1.5 py-0.5 hidden sm:block">
+              ←
+            </kbd>
             {currentMode === 'learning' ? <RotateCcw size={24} className="mb-1" /> : <X size={24} className="mb-1" />}
             <span className="text-xs font-bold uppercase tracking-wide">
               {currentMode === 'learning' ? 'Next / Skip' : 'Needs Work'}
@@ -336,12 +361,15 @@ function App() {
           <button 
             onClick={promote}
             disabled={activeWords.length === 0}
-            className={`flex flex-col items-center justify-center py-3.5 px-2 rounded-xl border-2 transition-all active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed ${
+            className={`relative flex flex-col items-center justify-center py-3.5 px-2 rounded-xl border-2 transition-all active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed ${
               currentMode === 'mastered'
                 ? 'bg-gray-50 border-gray-200 text-gray-400'
                 : 'bg-indigo-50 border-indigo-100 text-indigo-600'
             }`}
           >
+            <kbd className="absolute top-2 right-2 text-[10px] font-mono opacity-50 border border-current rounded px-1.5 py-0.5 hidden sm:block">
+              →
+            </kbd>
             {currentMode === 'mastered' ? <RotateCcw size={24} className="mb-1" /> : <Check size={24} className="mb-1" />}
             <span className="text-xs font-bold uppercase tracking-wide">
               {currentMode === 'mastered' ? 'Review Next' : 'Got it!'}
@@ -462,6 +490,28 @@ function App() {
                         <span className="font-bold text-gray-800 block">1つ戻る (Undo)</span>
                         <span className="text-gray-600 text-xs">カード左上の矢印ボタンで、直前の操作を取り消せます。</span>
                       </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="font-bold text-indigo-600 mb-2 text-base">キーボードショートカット</h3>
+                  <div className="grid grid-cols-2 gap-2 text-xs">
+                    <div className="bg-gray-50 p-2 rounded border border-gray-100 flex items-center justify-between">
+                      <span className="text-gray-600">カードをめくる</span>
+                      <kbd className="px-2 py-1 bg-white border border-gray-300 rounded font-mono font-bold text-gray-700">Space</kbd>
+                    </div>
+                    <div className="bg-gray-50 p-2 rounded border border-gray-100 flex items-center justify-between">
+                      <span className="text-gray-600">Got it!</span>
+                      <kbd className="px-2 py-1 bg-white border border-gray-300 rounded font-mono font-bold text-gray-700">→</kbd>
+                    </div>
+                    <div className="bg-gray-50 p-2 rounded border border-gray-100 flex items-center justify-between">
+                      <span className="text-gray-600">Next / Skip</span>
+                      <kbd className="px-2 py-1 bg-white border border-gray-300 rounded font-mono font-bold text-gray-700">←</kbd>
+                    </div>
+                    <div className="bg-gray-50 p-2 rounded border border-gray-100 flex items-center justify-between">
+                      <span className="text-gray-600">1つ戻る</span>
+                      <kbd className="px-2 py-1 bg-white border border-gray-300 rounded font-mono font-bold text-gray-700 text-xs">Backspace</kbd>
                     </div>
                   </div>
                 </div>
