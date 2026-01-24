@@ -114,8 +114,6 @@ function App() {
   };
 
   const handleNext = useCallback(() => {
-    setShowAnswer(false);
-
     if (activeWords.length > 0) {
       setHistory(prev => {
         const newHistory = [...prev, {
@@ -127,13 +125,30 @@ function App() {
       });
     }
 
-    if (activeWords.length > 0) {
+    if (!showAnswer) {
+      setShowAnswer(true);
+
       setTimeout(() => {
-        const nextIndex = (safeIndex + 1) % activeWords.length;
-        setIndices(prev => ({ ...prev, [currentMode]: nextIndex }));
-      }, 300);
+        setShowAnswer(false);
+
+        if (activeWords.length > 0) {
+          setTimeout(() => {
+            const nextIndex = (safeIndex + 1) % activeWords.length;
+            setIndices(prev => ({ ...prev, [currentMode]: nextIndex }));
+          }, 600);
+        }
+      }, 1000);
+    } else {
+      setShowAnswer(false);
+
+      if (activeWords.length > 0) {
+        setTimeout(() => {
+          const nextIndex = (safeIndex + 1) % activeWords.length;
+          setIndices(prev => ({ ...prev, [currentMode]: nextIndex }));
+        }, 5000);
+      }
     }
-  }, [activeWords.length, indices, currentMode, safeIndex]);
+  }, [activeWords.length, indices, currentMode, safeIndex, showAnswer]);
 
   const updateStatus = useCallback((newStatus) => {
     if (!currentWord) return;
