@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import Flashcard from './components/Flashcard';
 import { Check, X, BookOpen, Trophy, Settings, RotateCcw, Brain, GraduationCap, Layers, CircleHelp, ArrowLeft } from 'lucide-react';
 import vocabularyData from './data/vocabulary.json';
@@ -62,6 +62,14 @@ function App() {
   const [showAnswer, setShowAnswer] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [isHelpOpen, setIsHelpOpen] = useState(false);
+  const timeoutRef = useRef(null);
+
+  const clearTimers = useCallback(() => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
+    }
+  }, []);
   
   // Use vocabularyData directly to avoid first-render flicker
   const [words] = useState(vocabularyData);
@@ -114,6 +122,8 @@ function App() {
   };
 
   const handleNext = useCallback(() => {
+    clearTimers();
+
     if (activeWords.length > 0) {
       setHistory(prev => {
         const newHistory = [...prev, {
@@ -128,11 +138,11 @@ function App() {
     if (!showAnswer) {
       setShowAnswer(true);
 
-      setTimeout(() => {
+      timeoutRef.current = setTimeout(() => {
         setShowAnswer(false);
 
         if (activeWords.length > 0) {
-          setTimeout(() => {
+          timeoutRef.current = setTimeout(() => {
             const nextIndex = (safeIndex + 1) % activeWords.length;
             setIndices(prev => ({ ...prev, [currentMode]: nextIndex }));
           }, 600);
@@ -142,17 +152,18 @@ function App() {
       setShowAnswer(false);
 
       if (activeWords.length > 0) {
-        setTimeout(() => {
+        timeoutRef.current = setTimeout(() => {
           const nextIndex = (safeIndex + 1) % activeWords.length;
           setIndices(prev => ({ ...prev, [currentMode]: nextIndex }));
-        }, 5000);
+        }, 300);
       }
     }
-  }, [activeWords.length, indices, currentMode, safeIndex, showAnswer]);
+  }, [activeWords.length, indices, currentMode, safeIndex, showAnswer, clearTimers]);
 
   const updateStatus = useCallback((newStatus) => {
     if (!currentWord) return;
 
+    clearTimers();
     setShowAnswer(false);
 
     setHistory(prev => {
@@ -166,7 +177,7 @@ function App() {
       return newHistory.slice(-10);
     });
 
-    setTimeout(() => {
+    timeoutRef.current = setTimeout(() => {
       setWordStatus(prev => ({
         ...prev,
         [currentWord.id]: newStatus
@@ -176,9 +187,10 @@ function App() {
         setIndices(prev => ({ ...prev, [currentMode]: 0 }));
       }
     }, 300);
-  }, [currentWord, activeWords.length, indices, currentMode, wordStatus, safeIndex]);
+  }, [currentWord, activeWords.length, indices, currentMode, wordStatus, safeIndex, clearTimers]);
 
   const handleUndo = useCallback(() => {
+    clearTimers();
     if (history.length === 0) return;
 
     const lastAction = history[history.length - 1];
