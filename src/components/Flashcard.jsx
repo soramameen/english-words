@@ -1,4 +1,3 @@
-import React from 'react';
 import { RotateCcw, ArrowLeft } from 'lucide-react';
 
 export default function Flashcard({ word, showAnswer, onFlip, onUndo, canUndo }) {
