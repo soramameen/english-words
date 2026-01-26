@@ -152,7 +152,7 @@ function App() {
           </div>
         )}
       </main>
-      <ActionButtons currentMode={currentMode} activeWordsCount={activeWords.length} onPromote={promote} onDemote={demote} />
+      <ActionButtons currentMode={currentMode} activeWordsCount={activeWords.length} onPromote={promote} onDemote={demote} onNext={handleNext} />
       <SettingsModal isOpen={isSettingsOpen} onClose={() => setIsSettingsOpen(false)} onResetProgress={resetAllProgress} />
       <HelpModal isOpen={isHelpOpen} onClose={() => setIsHelpOpen(false)} />
     </div>
