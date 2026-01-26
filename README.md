@@ -107,6 +107,24 @@ git push origin ブランチ名
 * 上部に "Compare & Pull request" というボタンが出ているので，それをクリックします．
 * 変更内容のタイトルと説明を書いて， "Create pull request" を押せば完了です．
 
+### 6. リモートの main ブランチの内容を pull する
+
+最新の main ブランチの内容を持ってきて作業する場合は，以下のコマンドを入力します．
+
+```bash
+git pull https://github.com/soramameen/english-words.git main
+```
+
+その後に，2. に戻って，自分のブランチを作成するようにします．
+
+### 7. その他
+
+現在のブランチを確認する．main ブランチ以外で作業するようにしてください．
+
+```bash
+git branch
+```
+
 ## Contribution
 
 * 最初に実行するコマンド
@@ -117,11 +135,18 @@ cd english-words
 npm install
 ```
 
-* 作業を始めるときに実行するコマンド
+* 初めて作業を始めるときに実行するコマンド
 
 ```bash
 git checkout main
 git pull origin main
+git checkout -b OriginalBranchName
+```
+
+* 再度作業を始めるときに実行するコマンド
+
+```bash
+git pull https://github.com/soramameen/english-words.git main
 git checkout -b OriginalBranchName
 ```
 
