@@ -24,12 +24,6 @@
     "category": "General"
   },
   {
-    "id": 431,
-    "en": "absolute error",
-    "ja": "絶対誤差",
-    "category": "General"
-  },
-  {
     "id": 130,
     "en": "absolute value, magnitude",
     "ja": "絶対値",
@@ -120,12 +114,6 @@
     "category": "General"
   },
   {
-    "id": 434,
-    "en": "approximation",
-    "ja": "近似",
-    "category": "General"
-  },
-  {
     "id": 66,
     "en": "argument",
     "ja": "引数",
@@ -133,12 +121,6 @@
   },
   {
     "id": 120,
-    "en": "arithmetic operation",
-    "ja": "四則演算",
-    "category": "General"
-  },
-  {
-    "id": 435,
     "en": "arithmetic operation",
     "ja": "四則演算",
     "category": "General"
@@ -279,12 +261,6 @@
     "id": 124,
     "en": "binary representation",
     "ja": "2進小数表現",
-    "category": "General"
-  },
-  {
-    "id": 439,
-    "en": "binary representation",
-    "ja": "2進法 / 2進表現",
     "category": "General"
   },
   {
@@ -654,21 +630,9 @@
     "category": "General"
   },
   {
-    "id": 450,
-    "en": "decimal point",
-    "ja": "小数点",
-    "category": "General"
-  },
-  {
     "id": 122,
     "en": "decimal representation",
     "ja": "10進小数表現",
-    "category": "General"
-  },
-  {
-    "id": 451,
-    "en": "decimal representation",
-    "ja": "10進法",
     "category": "General"
   },
   {
@@ -733,12 +697,6 @@
   },
   {
     "id": 56,
-    "en": "derivative",
-    "ja": "導関数",
-    "category": "General"
-  },
-  {
-    "id": 452,
     "en": "derivative",
     "ja": "導関数",
     "category": "General"
@@ -825,12 +783,6 @@
     "id": 111,
     "en": "digit",
     "ja": "桁",
-    "category": "General"
-  },
-  {
-    "id": 453,
-    "en": "digit",
-    "ja": "0, 1, ..., 9の数",
     "category": "General"
   },
   {
@@ -1026,12 +978,6 @@
     "category": "General"
   },
   {
-    "id": 458,
-    "en": "error",
-    "ja": "誤差",
-    "category": "General"
-  },
-  {
     "id": 399,
     "en": "estimate",
     "ja": "推定する",
@@ -1140,19 +1086,7 @@
     "category": "General"
   },
   {
-    "id": 460,
-    "en": "exponent",
-    "ja": "指数部",
-    "category": "General"
-  },
-  {
     "id": 26,
-    "en": "exponential function",
-    "ja": "指数関数",
-    "category": "General"
-  },
-  {
-    "id": 461,
     "en": "exponential function",
     "ja": "指数関数",
     "category": "General"
@@ -1332,12 +1266,6 @@
     "category": "General"
   },
   {
-    "id": 470,
-    "en": "identity",
-    "ja": "恒等式",
-    "category": "General"
-  },
-  {
     "id": 278,
     "en": "identity matrix, unit matrix",
     "ja": "単位行列",
@@ -1363,12 +1291,6 @@
   },
   {
     "id": 162,
-    "en": "implement",
-    "ja": "実装する",
-    "category": "General"
-  },
-  {
-    "id": 471,
     "en": "implement",
     "ja": "実装する",
     "category": "General"
@@ -1668,12 +1590,6 @@
     "category": "General"
   },
   {
-    "id": 478,
-    "en": "mantissa",
-    "ja": "小数部, 仮数部",
-    "category": "General"
-  },
-  {
     "id": 251,
     "en": "mapping",
     "ja": "写像",
@@ -1848,12 +1764,6 @@
     "category": "General"
   },
   {
-    "id": 483,
-    "en": "normalization",
-    "ja": "正規化",
-    "category": "General"
-  },
-  {
     "id": 259,
     "en": "normalize",
     "ja": "正規化する",
@@ -1915,12 +1825,6 @@
   },
   {
     "id": 386,
-    "en": "optimal",
-    "ja": "最適な",
-    "category": "General"
-  },
-  {
-    "id": 484,
     "en": "optimal",
     "ja": "最適な",
     "category": "General"
@@ -2004,12 +1908,6 @@
     "category": "General"
   },
   {
-    "id": 487,
-    "en": "overflow",
-    "ja": "桁あふれ, オーバーフロー",
-    "category": "General"
-  },
-  {
     "id": 180,
     "en": "package",
     "ja": "ひとまとめにする、ひとかたまり（にしたもの）",
@@ -2088,12 +1986,6 @@
     "category": "General"
   },
   {
-    "id": 491,
-    "en": "polynomial",
-    "ja": "多項式",
-    "category": "General"
-  },
-  {
     "id": 43,
     "en": "positive",
     "ja": "正",
@@ -2121,12 +2013,6 @@
     "id": 82,
     "en": "power",
     "ja": "べき",
-    "category": "General"
-  },
-  {
-    "id": 492,
-    "en": "power",
-    "ja": "べき乗",
     "category": "General"
   },
   {
@@ -2478,12 +2364,6 @@
     "category": "General"
   },
   {
-    "id": 510,
-    "en": "relative error",
-    "ja": "相対誤差",
-    "category": "General"
-  },
-  {
     "id": 137,
     "en": "remainder",
     "ja": "余り、剰余",
@@ -2511,12 +2391,6 @@
     "id": 19,
     "en": "root",
     "ja": "根",
-    "category": "General"
-  },
-  {
-    "id": 513,
-    "en": "root",
-    "ja": "(多項式の)根, 解",
     "category": "General"
   },
   {
@@ -2628,19 +2502,7 @@
     "category": "General"
   },
   {
-    "id": 515,
-    "en": "sequence",
-    "ja": "数列",
-    "category": "General"
-  },
-  {
     "id": 13,
-    "en": "series",
-    "ja": "級数",
-    "category": "General"
-  },
-  {
-    "id": 516,
     "en": "series",
     "ja": "級数",
     "category": "General"
@@ -2659,12 +2521,6 @@
   },
   {
     "id": 131,
-    "en": "sign",
-    "ja": "符号",
-    "category": "General"
-  },
-  {
-    "id": 517,
     "en": "sign",
     "ja": "符号",
     "category": "General"
@@ -2689,12 +2545,6 @@
   },
   {
     "id": 135,
-    "en": "significant digit",
-    "ja": "有効数字",
-    "category": "General"
-  },
-  {
-    "id": 519,
     "en": "significant digit",
     "ja": "有効数字",
     "category": "General"
@@ -2835,12 +2685,6 @@
     "id": 106,
     "en": "store",
     "ja": "記憶する（計算機内部に保存する）",
-    "category": "General"
-  },
-  {
-    "id": 522,
-    "en": "store",
-    "ja": "(メモリに)格納する",
     "category": "General"
   },
   {
@@ -3121,12 +2965,6 @@
   },
   {
     "id": 136,
-    "en": "value",
-    "ja": "値",
-    "category": "General"
-  },
-  {
-    "id": 532,
     "en": "value",
     "ja": "値",
     "category": "General"
