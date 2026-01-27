@@ -4,7 +4,7 @@
  */
 
 /**
- * Learning modes for the spaced repetition system
+ * Learning modes for spaced repetition system
  * Three-stage progression: learning → reviewing → mastered
  */
 export const MODES = {
@@ -73,3 +73,44 @@ export const DEFAULT_INDICES = {
   reviewing: 0,
   mastered: 0
 };
+
+/**
+ * Vocabulary duplicate ID mapping for data migration
+ * Maps duplicate IDs to canonical IDs (keeps smaller ID as canonical)
+ * Used to migrate user learning data when removing duplicate entries
+ */
+export const VOCAB_DUPLICATE_MAPPING = {
+  431: 116,   // "absolute error" → 116
+  434: 107,   // "approximation" → 107
+  435: 120,   // "arithmetic operation" → 120
+  439: 124,   // "binary representation" → 124
+  450: 39,     // "decimal point" → 39
+  451: 122,   // "decimal representation" → 122
+  452: 56,     // "derivative" → 56
+  453: 111,    // "digit" → 111
+  458: 115,    // "error" → 115
+  460: 25,     // "exponent" → 25
+  461: 26,     // "exponential function" → 26
+  470: 277,    // "identity" → 277
+  471: 162,    // "implement" → 162
+  478: 127,    // "mantissa" → 127
+  483: 258,    // "normalization" → 258
+  484: 386,    // "optimal" → 386
+  487: 113,    // "overflow" → 113
+  491: 52,     // "polynomial" → 52
+  492: 82,     // "power" → 82
+  510: 117,    // "relative error" → 117
+  513: 19,     // "root" → 19
+  515: 42,     // "sequence" → 42
+  516: 13,     // "series" → 13
+  517: 131,    // "sign" → 131
+  519: 135,    // "significant digit" → 135
+  522: 106,    // "store" → 106
+  532: 136     // "value" → 136
+};
+
+/**
+ * LocalStorage key for tracking migration completion
+ * Prevents re-running migration on subsequent app loads
+ */
+export const MIGRATION_COMPLETED_KEY = 'vocabularyMigrationCompleted';
