@@ -1,4 +1,4 @@
-import { VOCAB_DUPLICATE_MAPPING, MIGRATION_COMPLETED_KEY, STORAGE_KEYS } from '../utils/constants';
+import { VOCAB_DUPLICATE_MAPPING, MIGRATION_COMPLETED_KEY, MODES } from '../utils/constants';
 
 /**
  * Migrates user learning data from duplicate vocabulary IDs to canonical IDs
